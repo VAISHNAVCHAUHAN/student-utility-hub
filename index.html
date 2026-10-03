@@ -1886,55 +1886,81 @@
       `;
     }
 
-    function router() {
-      const hash = window.location.hash || '#/';
-      const app = document.getElementById('app');
-      window.scrollTo(0, 0);
+function router() {
+  const path = window.location.pathname || '/';
+  const app = document.getElementById('app');
 
-      // Close mobile menu if open
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.add('hidden');
-      }
+  window.scrollTo(0, 0);
 
-      // Update Navigation Links active state
-      document.querySelectorAll('#main-header nav a').forEach(a => {
-        const linkHash = a.getAttribute('href');
-        if (linkHash === hash) {
-          a.classList.add('active-nav-link');
-        } else {
-          a.classList.remove('active-nav-link');
-        }
-      });
+  // Close mobile menu if open
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+    mobileMenu.classList.add('hidden');
+  }
 
-      // Route Dispatcher
-      if (hash === '#/' || hash === '#' || hash === '') {
-        app.innerHTML = renderHomePage();
-        initHomePageSearch();
-      } else if (hash === '#/tools') {
-        app.innerHTML = renderToolsDirectoryPage();
-      } else if (hash.startsWith('#/tools/')) {
-        const slug = hash.replace('#/tools/', '').split('?')[0];
-        app.innerHTML = renderIndividualToolPage(slug);
-        initToolPageInteractive(slug);
-      } else if (hash === '#/about') {
-        app.innerHTML = renderAboutPage();
-      } else if (hash === '#/contact') {
-        app.innerHTML = renderContactPage();
-      } else if (hash === '#/privacy-policy') {
-        app.innerHTML = renderPrivacyPolicyPage();
-      } else if (hash === '#/terms') {
-        app.innerHTML = renderTermsPage();
-      } else if (hash === '#/disclaimer') {
-        app.innerHTML = renderDisclaimerPage();
-      } else if (hash === '#/sitemap') {
-        app.innerHTML = renderSitemapPage();
-      } else {
-        app.innerHTML = renderNotFoundPage();
-      }
+  // Update Navigation Links active state
+  document.querySelectorAll('#main-header nav a').forEach(a => {
+    const href = a.getAttribute('href');
+
+    if (href === path) {
+      a.classList.add('active-nav-link');
+    } else {
+      a.classList.remove('active-nav-link');
     }
+  });
 
-    window.addEventListener('hashchange', router);
+  // Route Dispatcher
+  if (path === '/' || path === '') {
+
+    app.innerHTML = renderHomePage();
+    initHomePageSearch();
+
+  } else if (path === '/tools') {
+
+    app.innerHTML = renderToolsDirectoryPage();
+
+  } else if (path.startsWith('/tools/')) {
+
+    const slug = path
+      .replace('/tools/', '')
+      .split('?')[0]
+      .replace(/\/$/, '');
+
+    app.innerHTML = renderIndividualToolPage(slug);
+    initToolPageInteractive(slug);
+
+  } else if (path === '/about') {
+
+    app.innerHTML = renderAboutPage();
+
+  } else if (path === '/contact') {
+
+    app.innerHTML = renderContactPage();
+
+  } else if (path === '/privacy-policy') {
+
+    app.innerHTML = renderPrivacyPolicyPage();
+
+  } else if (path === '/terms') {
+
+    app.innerHTML = renderTermsPage();
+
+  } else if (path === '/disclaimer') {
+
+    app.innerHTML = renderDisclaimerPage();
+
+  } else if (path === '/sitemap') {
+
+    app.innerHTML = renderSitemapPage();
+
+  } else {
+
+    app.innerHTML = renderNotFoundPage();
+
+  }
+}
+
+window.addEventListener('popstate', router);
     window.addEventListener('DOMContentLoaded', () => {
       // Mobile Hamburger toggle
       const btn = document.getElementById('mobile-menu-btn');
