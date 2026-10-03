@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Student Utility Hub – Free Online Tools for Students </title>
+  <meta name="description" id="page-meta-desc" content="Free online calculators for Indian students: percentage, attendance (75% rule), CGPA, SGPA, loan EMI, GST, discounts, and BMI. Fast, privacy-first, and mobile-friendly.">
+  <link rel="canonical" id="page-canonical" href="https://studentutilityhub.com/">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234338ca'><path d='M12 3L1 9l11 6 9-4.91V17h2V9L12 3z'/><path d='M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z'/></svg>">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              200: '#c7d2fe',
+              300: '#a5b4fc',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca', // Primary Deep Indigo
+              800: '#3730a3',
+              900: '#312e81',
+              950: '#1e1b4b',
+            },
+            surface: {
+              base: '#f8fafc',
+              card: '#ffffff',
+              muted: '#f1f5f9',
+              border: '#e2e8f0',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Prevent layout shifts with fixed aspect/min-height on ad units */
+    .ad-slot {
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      margin: 1.5rem 0;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+      user-select: none;
+    }
+    .ad-slot::before {
+      content: "Advertisement";
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-size: 0.65rem;
+      color: #94a3b8;
+    }
+    .ad-slot-leaderboard { min-height: 90px; width: 100%; max-width: 728px; margin-left: auto; margin-right: auto; }
+    .ad-slot-rectangle { min-height: 250px; width: 100%; max-width: 336px; margin: 1rem auto; }
+    .ad-slot-banner { min-height: 100px; width: 100%; }
+    .ad-slot-sidebar { min-height: 300px; width: 100%; }
+
+    /* Transitions & accessibility outline */
+    *:focus-visible {
+      outline: 2px solid #4f46e5;
+      outline-offset: 2px;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      appearance: none;
+      margin: 0; 
+    }
+    input[type=number] {
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+    .active-nav-link {
+      color: #4338ca !important;
+      font-weight: 600 !important;
+      background-color: #eef2ff !important;
+    }
+  </style>
+
+  <!-- Dynamic JSON-LD Structured Data Container -->
+  <script type="application/ld+json" id="seo-json-ld">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Student Utility Hub",
+    "url": "https://studentutilityhub.com",
+    "description": "Free Online Tools for Students"
+  }
+  </script>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-100 selection:text-brand-900">
+
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-surface-border transition-shadow duration-200 shadow-sm" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#/" class="flex items-center gap-2.5 group focus:rounded-lg p-1" aria-label="Student Utility Hub Home">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-extrabold tracking-tight text-slate-900 leading-tight">
+            Student<span class="text-brand-700">Utility</span>Hub
+          </span>
+          <span class="text-[10px] sm:text-[11px] font-medium text-slate-500 -mt-0.5">Free Student Tools • India</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden md:flex items-center gap-1 text-sm font-medium text-slate-600" aria-label="Main Navigation">
+        <a href="#/" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-brand-50 transition" id="nav-home">Home</a>
+        <a href="#/tools" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-brand-50 transition" id="nav-tools">All Tools</a>
+        <a href="#/about" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-brand-50 transition" id="nav-about">About</a>
+        <a href="#/contact" class="px-3.5 py-2 rounded-lg hover:text-brand-700 hover:bg-brand-50 transition" id="nav-contact">Contact & Suggest</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button type="button" onclick="focusSearchInput()" class="hidden sm:flex items-center gap-2 px-3 py-1.5 text-xs text-slate-500 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-lg transition" aria-label="Search tools">
+          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>Find Tool</span>
+          <kbd class="text-[10px] bg-white border border-slate-300 px-1.5 py-0.5 rounded font-mono shadow-2xs">Ctrl+K</kbd>
+        </button>
+
+        <a href="#/tools" class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold text-white bg-brand-700 hover:bg-brand-800 rounded-lg shadow-sm transition">
+          10 Free Tools
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-4 space-y-1 shadow-lg">
+      <a href="#/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-brand-50 mobile-link">Home</a>
+      <a href="#/tools" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-brand-50 mobile-link">All 10 Tools</a>
+      <a href="#/about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-brand-50 mobile-link">About Platform</a>
+      <a href="#/contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-brand-700 hover:bg-brand-50 mobile-link">Suggest a Tool & Contact</a>
+      <div class="pt-2 border-t border-slate-100 text-xs text-slate-500 flex justify-between px-3">
+        <a href="#/privacy-policy" class="hover:underline">Privacy</a>
+        <a href="#/terms" class="hover:underline">Terms</a>
+        <a href="#/disclaimer" class="hover:underline">Disclaimer</a>
+        <a href="#/sitemap" class="hover:underline">Sitemap</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 focus:outline-none" tabindex="-1">
+    <!-- View content is injected dynamically here based on hash route -->
+  </main>
+
+  <!-- Toast Notification System -->
+  <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none" aria-live="polite"></div>
+
+  <footer class="bg-white border-t border-surface-border mt-16 pt-12 pb-8 text-slate-600 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 pb-10 border-b border-slate-200">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-brand-700 flex items-center justify-center text-white">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+            </div>
+            <span class="font-bold text-slate-900 text-base">Student Utility Hub</span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed max-w-sm">
+            Free, privacy-focused online utility platform offering instant calculators for Indian students, scholars, and everyday calculations. Built for speed, clarity, and mobile simplicity.
+          </p>
+          <p class="text-[11px] text-slate-400">
+            Note: Not affiliated with any central or state board, university, NTA, or government agency.
+          </p>
+        </div>
+
+        <!-- Academic Tools Column -->
+        <div>
+          <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Academic Tools</h2>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#/tools/percentage-calculator" class="hover:text-brand-700 transition">Percentage Calculator</a></li>
+            <li><a href="#/tools/cgpa-calculator" class="hover:text-brand-700 transition">CGPA Calculator</a></li>
+            <li><a href="#/tools/sgpa-calculator" class="hover:text-brand-700 transition">SGPA Calculator</a></li>
+            <li><a href="#/tools/attendance-calculator" class="hover:text-brand-700 transition">75% Attendance Tracker</a></li>
+          </ul>
+        </div>
+
+        <!-- Financial & Everyday Column -->
+        <div>
+          <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Everyday & Finance</h2>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#/tools/emi-calculator" class="hover:text-brand-700 transition">Education & Loan EMI</a></li>
+            <li><a href="#/tools/gst-calculator" class="hover:text-brand-700 transition">GST Calculator (5-28%)</a></li>
+            <li><a href="#/tools/discount-calculator" class="hover:text-brand-700 transition">Discount & Sale Calculator</a></li>
+            <li><a href="#/tools/age-calculator" class="hover:text-brand-700 transition">Exact Age & Birthday</a></li>
+            <li><a href="#/tools/bmi-calculator" class="hover:text-brand-700 transition">BMI Fitness Calculator</a></li>
+            <li><a href="#/tools/unit-converter" class="hover:text-brand-700 transition">Multi-Unit Converter</a></li>
+          </ul>
+        </div>
+
+        <!-- Company & Legal Column -->
+        <div>
+          <h2 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Trust & Legal</h2>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#/about" class="hover:text-brand-700 transition">About Our Mission</a></li>
+            <li><a href="#/contact" class="hover:text-brand-700 transition">Suggest a Tool / Feedback</a></li>
+            <li><a href="#/privacy-policy" class="hover:text-brand-700 transition">Privacy Policy</a></li>
+            <li><a href="#/terms" class="hover:text-brand-700 transition">Terms of Service</a></li>
+            <li><a href="#/disclaimer" class="hover:text-brand-700 transition">Disclaimer</a></li>
+            <li><a href="#/sitemap" class="hover:text-brand-700 transition">HTML & XML Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Disclaimer & Copyright -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+        <p>&copy; 2026 Student Utility Hub. All tools are free for student educational use.</p>
+        <div class="flex gap-4">
+          <span>Client-Side Calculations</span>
+          <span>•</span>
+          <span>Zero Server Data Stored</span>
+          <span>•</span>
+          <span>Made for Indian Students</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ==========================================================================
+       CENTRAL TOOLS DATA REGISTRY (Scalable Configuration)
+       ========================================================================== */
+    const TOOLS = [
+      {
+        id: 'percentage-calculator',
+        name: 'Percentage Calculator',
+        badge: 'Marks & Exams',
+        category: 'Academic Tools',
+        categorySlug: 'academic',
+        slug: 'percentage-calculator',
+        icon: `<svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>`,
+        description: 'Calculate examination percentages from marks obtained and maximum marks with exact fractions.',
+        seoTitle: 'Percentage Calculator – Calculate Exam Percentage Online Free',
+        seoDesc: 'Calculate school and college exam percentage from obtained and total marks. Instant, free, mobile-friendly percentage calculator.',
+        keywords: ['percentage', 'marks', 'exam marks', 'cbse', 'score', 'percent', 'fraction', 'result'],
+        related: ['cgpa-calculator', 'sgpa-calculator', 'attendance-calculator']
+      },
+      {
+        id: 'cgpa-calculator',
+        name: 'CGPA Calculator',
+        badge: 'Semesters',
+        category: 'Academic Tools',
+        categorySlug: 'academic',
+        slug: 'cgpa-calculator',
+        icon: `<svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>`,
+        description: 'Calculate Cumulative Grade Point Average across semesters with Indian university percentage converters.',
+        seoTitle: 'CGPA Calculator – Calculate CGPA Online Free for College Students',
+        seoDesc: 'Calculate overall CGPA across semesters with option to convert CGPA to percentage using CBSE and university standard multipliers.',
+        keywords: ['cgpa', 'semester', 'grade', 'college', 'btech', 'degree', 'gpa', 'cumulative'],
+        related: ['sgpa-calculator', 'percentage-calculator', 'attendance-calculator']
+      },
+      {
+        id: 'sgpa-calculator',
+        name: 'SGPA Calculator',
+        badge: 'Weighted Credits',
+        category: 'Academic Tools',
+        categorySlug: 'academic',
+        slug: 'sgpa-calculator',
+        icon: `<svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>`,
+        description: 'Calculate semester grade points based on course credits and grade point allocations with full breakdown.',
+        seoTitle: 'SGPA Calculator – Calculate Semester Grade Point Average',
+        seoDesc: 'Calculate Semester Grade Point Average (SGPA) based on course credits and grade points. Step-by-step calculation breakdown.',
+        keywords: ['sgpa', 'credits', 'course', 'grade point', 'semester', 'engineering'],
+        related: ['cgpa-calculator', 'percentage-calculator', 'attendance-calculator']
+      },
+      {
+        id: 'attendance-calculator',
+        name: 'Attendance Calculator',
+        badge: '75% Rule Tracker',
+        category: 'Academic Tools',
+        categorySlug: 'academic',
+        slug: 'attendance-calculator',
+        icon: `<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>`,
+        description: 'Check if you meet 75% or 85% attendance, find how many classes to attend or how many you can safely bunk.',
+        seoTitle: 'Attendance Calculator – Calculate 75% College Attendance',
+        seoDesc: 'Calculate your college attendance percentage, classes needed to reach 75%, and safe bunks with our free attendance calculator.',
+        keywords: ['attendance', 'bunk', '75 percent', 'classes', 'lecture', 'college attendance', 'absence', 'shortage'],
+        related: ['percentage-calculator', 'cgpa-calculator']
+      },
+      {
+        id: 'age-calculator',
+        name: 'Age Calculator',
+        badge: 'Exam Eligibility',
+        category: 'Everyday Calculators',
+        categorySlug: 'everyday',
+        slug: 'age-calculator',
+        icon: `<svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,
+        description: 'Calculate your exact age in years, months, and days for competitive exam forms (UPSC, SSC, Banking) and birthday count.',
+        seoTitle: 'Age Calculator – Exact Age in Years, Months, and Days',
+        seoDesc: 'Calculate exact age as on today or specific cut-off date for government and college exam applications with birthday countdown.',
+        keywords: ['age', 'dob', 'birthday', 'years', 'exam eligibility', 'date of birth'],
+        related: ['bmi-calculator', 'unit-converter']
+      },
+      {
+        id: 'emi-calculator',
+        name: 'EMI Calculator',
+        badge: 'Education & Loans',
+        category: 'Financial Tools',
+        categorySlug: 'financial',
+        slug: 'emi-calculator',
+        icon: `<svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>`,
+        description: 'Estimate monthly loan repayments, total interest, and total payable amount for student education or gadget loans.',
+        seoTitle: 'EMI Calculator – Calculate Education Loan Monthly EMI',
+        seoDesc: 'Free EMI calculator for student loans, laptops, and personal financing. Calculate monthly EMI, principal, and total interest.',
+        keywords: ['emi', 'loan', 'student loan', 'interest', 'bank', 'education loan', 'laptop emi'],
+        related: ['gst-calculator', 'discount-calculator']
+      },
+      {
+        id: 'gst-calculator',
+        name: 'GST Calculator',
+        badge: 'Indian Tax Slabs',
+        category: 'Financial Tools',
+        categorySlug: 'financial',
+        slug: 'gst-calculator',
+        icon: `<svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>`,
+        description: 'Compute Goods & Services Tax quickly using official Indian tax slabs (5%, 12%, 18%, 28%) with Add or Remove GST modes.',
+        seoTitle: 'GST Calculator India – Add or Remove GST (5%, 12%, 18%, 28%)',
+        seoDesc: 'Calculate inclusive and exclusive GST for Indian rates 5%, 12%, 18%, and 28%. See base price and tax breakdown instantly.',
+        keywords: ['gst', 'tax', 'inr', 'invoice', 'cgst', 'sgst', 'igst', 'add gst', 'remove gst'],
+        related: ['discount-calculator', 'emi-calculator']
+      },
+      {
+        id: 'discount-calculator',
+        name: 'Discount Calculator',
+        badge: 'Shopping & Books',
+        category: 'Financial Tools',
+        categorySlug: 'financial',
+        slug: 'discount-calculator',
+        icon: `<svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>`,
+        description: 'Calculate book, course, and shopping discounts with support for dual successive coupon discounts.',
+        seoTitle: 'Discount Calculator – Calculate Sale Price & Money Saved',
+        seoDesc: 'Find actual discounted price and total savings with single and successive discounts. Perfect for student book sales.',
+        keywords: ['discount', 'sale', 'coupon', 'savings', 'books discount', 'offer'],
+        related: ['gst-calculator', 'percentage-calculator']
+      },
+      {
+        id: 'bmi-calculator',
+        name: 'BMI Calculator',
+        badge: 'Fitness & Health',
+        category: 'Everyday Calculators',
+        categorySlug: 'everyday',
+        slug: 'bmi-calculator',
+        icon: `<svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>`,
+        description: 'Calculate Body Mass Index (BMI) using metric (cm/kg) or imperial (ft-in/lb) units with standard WHO categories.',
+        seoTitle: 'BMI Calculator – Body Mass Index Calculator for Youth & Students',
+        seoDesc: 'Free Body Mass Index calculator. Supports metric and imperial units with standard categories and weight guidelines.',
+        keywords: ['bmi', 'weight', 'height', 'fitness', 'health', 'body mass index'],
+        related: ['age-calculator', 'unit-converter']
+      },
+      {
+        id: 'unit-converter',
+        name: 'Unit Converter',
+        badge: 'Physics & Math',
+        category: 'Conversion Tools',
+        categorySlug: 'conversion',
+        slug: 'unit-converter',
+        icon: `<svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>`,
+        description: 'Interactive conversion utility for Length, Weight, Temperature, Area, Speed, Volume, and Time.',
+        seoTitle: 'Unit Converter – Free Online Multi-Unit Conversion Tool',
+        seoDesc: 'Convert metric and imperial units for physics, engineering, and mathematics. Instant conversion between meters, feet, kg, and more.',
+        keywords: ['unit converter', 'metric', 'length', 'weight', 'temperature', 'physics units'],
+        related: ['percentage-calculator', 'bmi-calculator']
+      }
+    ];
+
+    const CATEGORIES = [
+      { name: 'All Tools', id: 'all' },
+      { name: 'Academic Tools', id: 'academic' },
+      { name: 'Financial Tools', id: 'financial' },
+      { name: 'Everyday Calculators', id: 'everyday' },
+      { name: 'Conversion Tools', id: 'conversion' }
+    ];
+
+    function renderBreadcrumbs(items) {
+      return `
+        <nav class="flex items-center text-xs font-medium text-slate-500 mb-4" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-2">
+            ${items.map((item, index) => {
+              const isLast = index === items.length - 1;
+              return `
+                <li class="inline-flex items-center">
+                  ${index > 0 ? `<svg class="w-3.5 h-3.5 text-slate-400 mx-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>` : ''}
+                  ${isLast ? `<span class="text-slate-900 font-semibold" aria-current="page">${item.label}</span>` : `<a href="${item.url}" class="hover:text-brand-700 hover:underline">${item.label}</a>`}
+                </li>
+              `;
+            }).join('')}
+          </ol>
+        </nav>
+      `;
+    }
+
+    function renderAdSlot(type = 'banner', label = 'Responsive Ad') {
+      const classMap = {
+        leaderboard: 'ad-slot-leaderboard',
+        rectangle: 'ad-slot-rectangle',
+        banner: 'ad-slot-banner',
+        sidebar: 'ad-slot-sidebar'
+      };
+      return `
+        <div class="ad-slot ${classMap[type] || 'ad-slot-banner'}" role="region" aria-label="Advertisement Banner">
+          <div class="flex flex-col items-center justify-center p-3 text-center">
+            <span class="text-slate-400 text-xs font-semibold tracking-wider uppercase mb-1">Advertisement Space</span>
+            <span class="text-[11px] text-slate-400">Google AdSense / Direct Partner Placement</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderToolCard(tool) {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-xs hover:shadow-md hover:border-brand-300 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3.5">
+              <div class="w-11 h-11 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-colors duration-200">
+                ${tool.icon}
+              </div>
+              <span class="text-[11px] font-semibold tracking-wide text-brand-700 bg-brand-50 border border-brand-100/80 px-2.5 py-0.5 rounded-full">
+                ${tool.badge}
+              </span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 group-hover:text-brand-700 transition-colors">
+              ${tool.name}
+            </h3>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              ${tool.description}
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-medium">${tool.category}</span>
+            <a href="#/tools/${tool.slug}" class="inline-flex items-center text-xs font-semibold text-brand-700 hover:text-brand-900 group-hover:translate-x-0.5 transition-all">
+              <span>Calculate Now</span>
+              <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderFaqAccordion(faqs) {
+      if (!faqs || !faqs.length) return '';
+      return `
+        <div class="space-y-3">
+          ${faqs.map((faq, i) => `
+            <details class="group bg-white rounded-xl border border-slate-200 p-4 open:border-brand-300 open:shadow-xs transition" ${i === 0 ? 'open' : ''}>
+              <summary class="flex justify-between items-center font-semibold text-sm text-slate-900 cursor-pointer list-none select-none">
+                <span>${faq.q}</span>
+                <span class="text-brand-600 group-open:rotate-180 transition-transform duration-200 text-lg">▾</span>
+              </summary>
+              <div class="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed pt-2 border-t border-slate-100">
+                ${faq.a}
+              </div>
+            </details>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function renderRelatedTools(relatedSlugs) {
+      const relTools = TOOLS.filter(t => relatedSlugs.includes(t.slug));
+      if (!relTools.length) return '';
+      return `
+        <div class="mt-10 pt-8 border-t border-slate-200">
+          <h3 class="text-base font-bold text-slate-900 mb-4">Related Student Calculators</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            ${relTools.map(t => `
+              <a href="#/tools/${t.slug}" class="p-3.5 bg-white border border-slate-200 rounded-xl hover:border-brand-400 hover:shadow-xs transition flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-brand-50 text-brand-700 shrink-0">
+                  ${t.icon}
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">${t.name}</h4>
+                  <p class="text-[11px] text-slate-500 line-clamp-1">${t.description}</p>
+                </div>
+              </a>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function updateSeoMetadata(title, description, canonicalPath, schemaObj = null) {
+      document.title = title;
+      const metaDesc = document.getElementById('page-meta-desc');
+      if (metaDesc) metaDesc.setAttribute('content', description);
+      
+      const canonicalTag = document.getElementById('page-canonical');
+      if (canonicalTag) canonicalTag.setAttribute('href', `https://studentutilityhub.com${canonicalPath}`);
+
+      const jsonLdTag = document.getElementById('seo-json-ld');
+      if (jsonLdTag && schemaObj) {
+        jsonLdTag.textContent = JSON.stringify(schemaObj);
+      }
+    }
+
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = `px-4 py-2.5 rounded-xl shadow-lg text-xs font-semibold pointer-events-auto transform transition-all duration-300 flex items-center gap-2 ${
+        type === 'error' ? 'bg-red-800 text-white' : 'bg-slate-900 text-white'
+      }`;
+      toast.innerHTML = `
+        <svg class="w-4 h-4 ${type === 'error' ? 'text-red-300' : 'text-emerald-400'}" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(8px)';
+        setTimeout(() => toast.remove(), 300);
+      }, 2500);
+    }
+
+    function renderHomePage() {
+      updateSeoMetadata(
+        'Student Utility Hub – Free Online Tools for Students',
+        'Calculate marks, attendance, CGPA, SGPA, EMI, GST and more with fast, simple and free online tools built for Indian students.',
+        '/',
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Student Utility Hub",
+          "url": "https://studentutilityhub.com",
+          "description": "Free Online Tools for Students"
+        }
+      );
+
+      return `
+        <!-- Hero Section -->
+        <section class="text-center py-6 sm:py-10 max-w-3xl mx-auto">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs font-semibold uppercase tracking-wider mb-4">
+            <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+            100% Free Student Tools
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight sm:leading-none mb-4">
+            Free Online Tools for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 via-brand-600 to-indigo-500">Students</span>
+          </h1>
+          <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed mb-6">
+            Calculate marks, attendance, CGPA, SGPA, EMI, GST, and discounts with lightning-fast, mobile-friendly calculators designed for school, college, and university life.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-3">
+            <a href="#/tools" class="px-5 py-2.5 bg-brand-700 hover:bg-brand-800 text-white text-xs sm:text-sm font-semibold rounded-xl shadow-sm transition">
+              Explore All 10 Tools
+            </a>
+            <a href="#/tools/percentage-calculator" class="px-5 py-2.5 bg-white border border-slate-200 hover:border-slate-300 text-slate-800 text-xs sm:text-sm font-semibold rounded-xl transition">
+              Percentage Calculator
+            </a>
+          </div>
+        </section>
+
+        <!-- Search Bar Section -->
+        <section class="max-w-2xl mx-auto mb-6">
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <input 
+              type="text" 
+              id="home-search-input" 
+              class="w-full pl-10 pr-24 py-3.5 bg-white border border-slate-300 rounded-2xl shadow-xs text-sm text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition"
+              placeholder="Search a tool... e.g. CGPA, EMI, Attendance, Marks, Tax"
+              oninput="handleLiveSearch(this.value)"
+              autocomplete="off"
+            >
+            <div id="search-clear-btn" class="absolute inset-y-0 right-0 pr-3 flex items-center hidden">
+              <button onclick="clearSearch()" class="text-xs text-slate-400 hover:text-slate-600 bg-slate-100 hover:bg-slate-200 px-2 py-1 rounded-md">Clear</button>
+            </div>
+          </div>
+          <!-- Realtime Search Quick Tags -->
+          <div class="flex flex-wrap items-center gap-2 mt-2.5 text-xs text-slate-500 px-1">
+            <span class="font-medium text-slate-400">Popular:</span>
+            <button onclick="quickSearchTag('cgpa')" class="hover:text-brand-700 underline">CGPA</button>
+            <span>•</span>
+            <button onclick="quickSearchTag('attendance')" class="hover:text-brand-700 underline">75% Attendance</button>
+            <span>•</span>
+            <button onclick="quickSearchTag('marks')" class="hover:text-brand-700 underline">Exam Marks</button>
+            <span>•</span>
+            <button onclick="quickSearchTag('loan')" class="hover:text-brand-700 underline">Education Loan</button>
+          </div>
+        </section>
+
+        <!-- Top Ad Placement -->
+        ${renderAdSlot('leaderboard', 'Hero Leaderboard Ad')}
+
+        <!-- Category Filter Tabs -->
+        <section class="mb-6">
+          <div class="flex items-center justify-between pb-2 border-b border-slate-200 mb-4 overflow-x-auto">
+            <div class="flex space-x-2" id="category-tabs">
+              ${CATEGORIES.map(c => `
+                <button 
+                  onclick="filterCategory('${c.id}')" 
+                  id="tab-btn-${c.id}"
+                  class="category-tab-btn whitespace-nowrap px-3.5 py-1.5 rounded-lg text-xs font-medium transition ${c.id === 'all' ? 'bg-brand-700 text-white shadow-xs' : 'bg-white text-slate-600 hover:bg-slate-100'}"
+                >
+                  ${c.name}
+                </button>
+              `).join('')}
+            </div>
+            <span class="text-xs text-slate-400 hidden sm:inline" id="tools-counter-badge">10 Tools Available</span>
+          </div>
+
+          <!-- Tools Grid -->
+          <div id="tools-grid-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            ${TOOLS.map(renderToolCard).join('')}
+          </div>
+          
+          <!-- Empty Search State -->
+          <div id="no-search-results" class="hidden text-center py-12 bg-white rounded-2xl border border-dashed border-slate-300 p-8">
+            <div class="w-12 h-12 mx-auto rounded-full bg-slate-100 flex items-center justify-center text-slate-400 mb-3">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="text-base font-semibold text-slate-900">No matching calculator found</h3>
+            <p class="text-xs text-slate-500 max-w-sm mx-auto mt-1 mb-4">We are expanding our catalog regularly. Need a specific calculator for your university or syllabus?</p>
+            <a href="#/contact" class="inline-flex items-center px-4 py-2 bg-brand-700 hover:bg-brand-800 text-white rounded-xl text-xs font-semibold transition">
+              Suggest a Tool
+            </a>
+          </div>
+        </section>
+
+        <section class="my-14 bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8">
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Why Use Student Utility Hub?</h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">Built specifically around the routines, grading schemes, and day-to-day requirements of Indian students.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-sm mb-3">⚡</div>
+              <h3 class="text-sm font-bold text-slate-900">Instant Calculations</h3>
+              <p class="text-xs text-slate-600 mt-1">Calculations happen instantly inside your browser. No server lag, no reloads, and minimal data consumption.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm mb-3">🔒</div>
+              <h3 class="text-sm font-bold text-slate-900">100% Private & Client-Side</h3>
+              <p class="text-xs text-slate-600 mt-1">None of your exam marks, financial numbers, or dates of birth are uploaded or stored. Complete device privacy.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm mb-3">📱</div>
+              <h3 class="text-sm font-bold text-slate-900">Mobile-First Layout</h3>
+              <p class="text-xs text-slate-600 mt-1">Engineered for comfortable thumb reach and large tap targets on entry-level Android and iOS smartphones.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-sm mb-3">🎓</div>
+              <h3 class="text-sm font-bold text-slate-900">Indian Syllabus Friendly</h3>
+              <p class="text-xs text-slate-600 mt-1">Standard 75% college attendance rules, CBSE/UGC 9.5 multiplier conversions, and GST tax slabs.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- In-Content Ad Placement -->
+        ${renderAdSlot('banner', 'Content Intermediate Ad')}
+
+        <!-- Homepage FAQs -->
+        <section class="my-12">
+          <div class="text-center max-w-2xl mx-auto mb-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">Answers to common student questions about our tools and calculations.</p>
+          </div>
+          <div class="max-w-3xl mx-auto">
+            ${renderFaqAccordion([
+              {
+                q: "Are all calculators on Student Utility Hub free?",
+                a: "Yes, 100% free. There are no sign-ups, subscriptions, or hidden charges. The website is funded through non-intrusive banner advertisements."
+              },
+              {
+                q: "How does the Attendance Calculator calculate 75% criteria?",
+                a: "It divides your attended lectures by total lectures to date. If below 75%, it calculates the exact number of consecutive upcoming classes you must attend to cross the 75% threshold."
+              },
+              {
+                q: "Is CGPA to percentage conversion standard across all Indian universities?",
+                a: "CBSE and many state universities use the standard formula (Percentage = CGPA × 9.5), while several deemed or technical universities use 10.0. Our CGPA calculator provides both multipliers."
+              },
+              {
+                q: "Do you store any personal marks or financial information?",
+                a: "No. All computations are performed using client-side JavaScript within your own browser. We do not store or send marks or dates to any database."
+              }
+            ])}
+          </div>
+        </section>
+
+        <!-- Suggest Tool CTA Banner -->
+        <section class="bg-gradient-to-r from-brand-900 to-indigo-900 text-white rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 my-10 shadow-sm">
+          <div class="space-y-1 text-center sm:text-left">
+            <h3 class="text-lg sm:text-xl font-bold">Need a specific calculator for your university?</h3>
+            <p class="text-xs sm:text-sm text-brand-200">Tell us what you need—GPA converters, internal marks trackers, or lab cutoffs.</p>
+          </div>
+          <a href="#/contact" class="px-5 py-2.5 bg-white text-brand-900 hover:bg-brand-50 font-bold text-xs sm:text-sm rounded-xl transition whitespace-nowrap shadow-xs">
+            Suggest a New Tool
+          </a>
+        </section>
+      `;
+    }
+
+    function renderToolsDirectoryPage() {
+      updateSeoMetadata(
+        'All Student Tools & Calculators – Student Utility Hub',
+        'Browse our complete collection of 10 free academic, everyday, financial, and conversion tools designed for students.',
+        '/tools'
+      );
+
+      return `
+        <div class="mb-6">
+          ${renderBreadcrumbs([{ label: 'Home', url: '#/' }, { label: 'All Tools', url: '#/tools' }])}
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">All Tools Directory</h1>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Explore all calculators categorized for fast access.</p>
+        </div>
+
+        ${renderAdSlot('leaderboard')}
+
+        <div class="space-y-10">
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-200">
+              <span class="w-2.5 h-2.5 rounded-full bg-brand-600"></span>
+              <h2 class="text-lg font-bold text-slate-900">Academic Tools</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              ${TOOLS.filter(t => t.categorySlug === 'academic').map(renderToolCard).join('')}
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-200">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+              <h2 class="text-lg font-bold text-slate-900">Financial Tools</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              ${TOOLS.filter(t => t.categorySlug === 'financial').map(renderToolCard).join('')}
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-200">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+              <h2 class="text-lg font-bold text-slate-900">Everyday Calculators</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              ${TOOLS.filter(t => t.categorySlug === 'everyday').map(renderToolCard).join('')}
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-2 mb-4 pb-2 border-b border-slate-200">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+              <h2 class="text-lg font-bold text-slate-900">Conversion Tools</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              ${TOOLS.filter(t => t.categorySlug === 'conversion').map(renderToolCard).join('')}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderPercentageCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <form id="percentage-form" onsubmit="event.preventDefault(); calculatePercentage();" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="pct-obtained" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Marks Obtained</label>
+                <input type="number" step="any" min="0" id="pct-obtained" placeholder="e.g. 465" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required>
+              </div>
+              <div>
+                <label for="pct-total" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Total Maximum Marks</label>
+                <input type="number" step="any" min="0.001" id="pct-total" placeholder="e.g. 500" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <button type="submit" class="px-5 py-2.5 bg-brand-700 hover:bg-brand-800 text-white rounded-xl text-xs font-bold transition shadow-xs">
+                Calculate Percentage
+              </button>
+              <button type="button" onclick="resetPercentageCalc()" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-semibold transition">
+                Reset
+              </button>
+            </div>
+          </form>
+
+          <div id="pct-result" class="hidden mt-6 p-4 rounded-xl bg-brand-50/70 border border-brand-200">
+            <span class="text-xs font-semibold text-brand-800 uppercase tracking-wider">Calculated Result</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span class="text-3xl sm:text-4xl font-black text-brand-900" id="pct-result-val">0%</span>
+              <span class="text-xs text-slate-600 font-medium" id="pct-fraction-val"></span>
+            </div>
+            <p class="text-xs text-slate-600 mt-2 font-mono bg-white p-2.5 rounded-lg border border-brand-100" id="pct-formula-step"></p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCgpaCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <p class="text-xs text-slate-500 mb-4">Enter GPA for each completed semester to calculate cumulative CGPA.</p>
+          <div id="cgpa-rows" class="space-y-3 mb-4">
+            <div class="grid grid-cols-12 gap-2 items-center cgpa-row">
+              <div class="col-span-5 sm:col-span-4">
+                <span class="text-xs font-semibold text-slate-700">Semester 1</span>
+              </div>
+              <div class="col-span-7 sm:col-span-8">
+                <input type="number" step="0.01" min="0" max="10" placeholder="GPA (e.g. 8.45)" class="cgpa-input w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" value="8.40" oninput="calculateCgpa()">
+              </div>
+            </div>
+            <div class="grid grid-cols-12 gap-2 items-center cgpa-row">
+              <div class="col-span-5 sm:col-span-4">
+                <span class="text-xs font-semibold text-slate-700">Semester 2</span>
+              </div>
+              <div class="col-span-7 sm:col-span-8">
+                <input type="number" step="0.01" min="0" max="10" placeholder="GPA (e.g. 7.90)" class="cgpa-input w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" value="8.10" oninput="calculateCgpa()">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 mb-6">
+            <button type="button" onclick="addCgpaSemester()" class="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-lg border border-slate-300 transition flex items-center gap-1">
+              <span>+ Add Semester</span>
+            </button>
+            <button type="button" onclick="removeCgpaSemester()" class="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-red-600 text-xs font-bold rounded-lg border border-slate-300 transition">
+              Remove Last
+            </button>
+          </div>
+
+          <div class="p-4 rounded-xl bg-indigo-50/70 border border-indigo-200">
+            <span class="text-xs font-semibold text-indigo-900 uppercase tracking-wider">Overall Result</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span class="text-3xl sm:text-4xl font-black text-indigo-950" id="cgpa-output">8.25</span>
+              <span class="text-xs text-indigo-700 font-medium">CGPA (10-point scale)</span>
+            </div>
+
+            <!-- Percentage Conversion options -->
+            <div class="mt-4 pt-3 border-t border-indigo-200/80">
+              <div class="flex items-center justify-between text-xs font-semibold text-slate-700 mb-2">
+                <span>Equivalent Percentage Estimate:</span>
+                <div class="flex gap-2">
+                  <label class="inline-flex items-center text-[11px] cursor-pointer">
+                    <input type="radio" name="cgpa-multiplier" value="9.5" checked onchange="calculateCgpa()" class="text-brand-600">
+                    <span class="ml-1">CBSE/VTU (× 9.5)</span>
+                  </label>
+                  <label class="inline-flex items-center text-[11px] cursor-pointer">
+                    <input type="radio" name="cgpa-multiplier" value="10" onchange="calculateCgpa()" class="text-brand-600">
+                    <span class="ml-1">Direct (× 10.0)</span>
+                  </label>
+                </div>
+              </div>
+              <div class="text-xl font-extrabold text-slate-900" id="cgpa-pct-output">78.38%</div>
+              <p class="text-[11px] text-slate-500 mt-1">Note: Conversion formulas vary across Indian universities. Check your official grade card regulations.</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSgpaCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <p class="text-xs text-slate-500 mb-4">Add your courses with their grade point (out of 10) and credits.</p>
+          <div class="overflow-x-auto mb-3">
+            <table class="w-full text-left text-xs" id="sgpa-table">
+              <thead>
+                <tr class="border-b border-slate-200 text-slate-500 font-bold uppercase tracking-wider">
+                  <th class="py-2 px-1">Subject</th>
+                  <th class="py-2 px-1 w-28">Grade Point</th>
+                  <th class="py-2 px-1 w-24">Credits</th>
+                  <th class="py-2 px-1 w-10 text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody id="sgpa-rows" class="divide-y divide-slate-100">
+                <tr class="sgpa-row">
+                  <td class="py-2 pr-2"><input type="text" value="Engineering Math" class="w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" placeholder="Course name"></td>
+                  <td class="py-2 px-1"><input type="number" step="0.5" min="0" max="10" value="9" class="sgpa-gp w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+                  <td class="py-2 px-1"><input type="number" step="0.5" min="1" max="10" value="4" class="sgpa-cr w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+                  <td class="py-2 pl-1 text-center"><button type="button" onclick="deleteSgpaRow(this)" class="text-red-500 hover:text-red-700">✕</button></td>
+                </tr>
+                <tr class="sgpa-row">
+                  <td class="py-2 pr-2"><input type="text" value="Data Structures" class="w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" placeholder="Course name"></td>
+                  <td class="py-2 px-1"><input type="number" step="0.5" min="0" max="10" value="8" class="sgpa-gp w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+                  <td class="py-2 px-1"><input type="number" step="0.5" min="1" max="10" value="4" class="sgpa-cr w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+                  <td class="py-2 pl-1 text-center"><button type="button" onclick="deleteSgpaRow(this)" class="text-red-500 hover:text-red-700">✕</button></td>
+                </tr>
+                <tr class="sgpa-row">
+                  <td class="py-2 pr-2"><input type="text" value="Digital Logic" class="w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" placeholder="Course name"></td>
+                  <td class="py-2 px-1"><input type="number" step="0.5" min="0" max="10" value="9" class="sgpa-gp w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+                  <td class="py-2 px-1"><input type="number" step="0.5" min="1" max="10" value="3" class="sgpa-cr w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+                  <td class="py-2 pl-1 text-center"><button type="button" onclick="deleteSgpaRow(this)" class="text-red-500 hover:text-red-700">✕</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <button type="button" onclick="addSgpaRow()" class="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-lg border border-slate-300 transition mb-5">
+            + Add Another Subject
+          </button>
+
+          <div class="p-4 rounded-xl bg-violet-50/70 border border-violet-200">
+            <span class="text-xs font-semibold text-violet-900 uppercase tracking-wider">Semester SGPA Result</span>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span class="text-3xl sm:text-4xl font-black text-violet-950" id="sgpa-output">8.64</span>
+              <span class="text-xs text-violet-700 font-medium">SGPA</span>
+            </div>
+            <div class="text-xs text-slate-600 mt-2 font-mono bg-white p-2.5 rounded-lg border border-violet-100" id="sgpa-breakdown">
+              Total Points: 95.0 | Total Credits: 11
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderAttendanceCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <form onsubmit="event.preventDefault(); calculateAttendance();" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label for="att-attended" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Classes Attended</label>
+                <input type="number" min="0" id="att-attended" value="48" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateAttendance()">
+              </div>
+              <div>
+                <label for="att-total" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Total Classes Held</label>
+                <input type="number" min="1" id="att-total" value="65" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateAttendance()">
+              </div>
+              <div>
+                <label for="att-target" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Target Requirement (%)</label>
+                <select id="att-target" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" onchange="calculateAttendance()">
+                  <option value="75" selected>75% (Standard University / CBSE)</option>
+                  <option value="80">80% (Medical / Specific Colleges)</option>
+                  <option value="85">85% (Strict Attendance Policy)</option>
+                  <option value="65">65% (With Medical Condonation)</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+          <div class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200" id="att-result-container">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-200">
+              <div>
+                <span class="text-xs text-slate-500 font-semibold uppercase">Current Attendance</span>
+                <div class="text-3xl font-black text-slate-900 mt-0.5" id="att-current-pct">73.85%</div>
+              </div>
+              <div id="att-status-badge" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-amber-100 text-amber-900 border border-amber-200 text-center">
+                Short of 75% Requirement
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 text-xs">
+              <div class="p-3 bg-white rounded-xl border border-slate-200" id="att-action-advice">
+                <span class="font-bold text-slate-800">Action Plan:</span>
+                <p class="text-slate-600 mt-1" id="att-action-text">You need to attend next <strong>3</strong> classes in a row to reach 75%.</p>
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200">
+                <span class="font-bold text-slate-800">Next Class Scenarios:</span>
+                <div class="mt-1 space-y-1 text-slate-600">
+                  <p>• If you attend next class: <strong id="att-next-attend">74.24%</strong></p>
+                  <p>• If you miss next class: <strong id="att-next-miss" class="text-red-600">72.73%</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderAgeCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <form onsubmit="event.preventDefault(); calculateAge();" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="age-dob" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Date of Birth</label>
+                <input type="date" id="age-dob" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required onchange="calculateAge()">
+              </div>
+              <div>
+                <label for="age-asof" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Age As Of (Today / Exam Cutoff)</label>
+                <input type="date" id="age-asof" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required onchange="calculateAge()">
+              </div>
+            </div>
+            <div class="flex gap-2 pt-2">
+              <button type="submit" class="px-5 py-2.5 bg-brand-700 hover:bg-brand-800 text-white rounded-xl text-xs font-bold transition">
+                Calculate Exact Age
+              </button>
+            </div>
+          </form>
+
+          <div id="age-result-card" class="mt-6 p-4 rounded-xl bg-amber-50/70 border border-amber-200">
+            <span class="text-xs font-semibold text-amber-900 uppercase tracking-wider">Your Exact Age</span>
+            <div class="grid grid-cols-3 gap-3 my-3 text-center">
+              <div class="bg-white p-3 rounded-xl border border-amber-200/80 shadow-2xs">
+                <span class="text-2xl sm:text-3xl font-black text-slate-900" id="age-years">20</span>
+                <span class="block text-[11px] font-bold text-slate-500 uppercase mt-0.5">Years</span>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-amber-200/80 shadow-2xs">
+                <span class="text-2xl sm:text-3xl font-black text-slate-900" id="age-months">5</span>
+                <span class="block text-[11px] font-bold text-slate-500 uppercase mt-0.5">Months</span>
+              </div>
+              <div class="bg-white p-3 rounded-xl border border-amber-200/80 shadow-2xs">
+                <span class="text-2xl sm:text-3xl font-black text-slate-900" id="age-days">14</span>
+                <span class="block text-[11px] font-bold text-slate-500 uppercase mt-0.5">Days</span>
+              </div>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-amber-200 text-xs text-slate-700 flex items-center justify-between">
+              <span>Next Birthday: <strong id="age-next-date">Upcoming</strong></span>
+              <span class="font-bold text-amber-800" id="age-next-days">-- days left</span>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderEmiCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <form onsubmit="event.preventDefault(); calculateEmi();" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label for="emi-amount" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Loan Amount (₹)</label>
+                <input type="number" min="1000" id="emi-amount" value="300000" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateEmi()">
+              </div>
+              <div>
+                <label for="emi-rate" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Annual Interest Rate (%)</label>
+                <input type="number" step="0.1" min="0.1" max="50" id="emi-rate" value="9.5" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateEmi()">
+              </div>
+              <div>
+                <label for="emi-tenure" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Tenure</label>
+                <div class="flex gap-2">
+                  <input type="number" min="1" max="360" id="emi-tenure" value="3" class="w-2/3 px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateEmi()">
+                  <select id="emi-tenure-type" class="w-1/3 px-2 py-2 text-xs bg-slate-50 border border-slate-300 rounded-xl" onchange="calculateEmi()">
+                    <option value="years" selected>Years</option>
+                    <option value="months">Months</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="mt-6 p-4 rounded-xl bg-blue-50/70 border border-blue-200">
+            <div class="text-center sm:text-left mb-4">
+              <span class="text-xs font-semibold text-blue-900 uppercase tracking-wider">Monthly Repayment</span>
+              <div class="text-3xl sm:text-4xl font-black text-blue-950 mt-0.5" id="emi-monthly-val">₹9,610</div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-blue-200 text-xs">
+              <div class="bg-white p-3 rounded-lg border border-blue-100">
+                <span class="text-slate-500 block">Principal Amount</span>
+                <span class="text-sm font-bold text-slate-900" id="emi-principal-val">₹3,00,000</span>
+              </div>
+              <div class="bg-white p-3 rounded-lg border border-blue-100">
+                <span class="text-slate-500 block">Total Interest</span>
+                <span class="text-sm font-bold text-blue-700" id="emi-interest-val">₹45,960</span>
+              </div>
+              <div class="bg-white p-3 rounded-lg border border-blue-100">
+                <span class="text-slate-500 block">Total Amount Payable</span>
+                <span class="text-sm font-bold text-slate-900" id="emi-total-val">₹3,45,960</span>
+              </div>
+            </div>
+
+            <!-- Visualization Bar -->
+            <div class="mt-4 pt-2">
+              <div class="flex justify-between text-[11px] font-semibold mb-1">
+                <span class="text-slate-700">Principal vs Interest Ratio</span>
+                <span class="text-blue-700" id="emi-ratio-text">86.7% / 13.3%</span>
+              </div>
+              <div class="w-full h-3 bg-blue-200 rounded-full overflow-hidden flex">
+                <div id="emi-bar-principal" class="bg-slate-700 h-full" style="width: 86.7%"></div>
+                <div id="emi-bar-interest" class="bg-blue-600 h-full" style="width: 13.3%"></div>
+              </div>
+            </div>
+            
+            <p class="text-[11px] text-slate-500 mt-4 leading-normal">
+              Disclaimer: This calculator provides an estimate for education loans, laptops, and student gadgets. Actual interest rates, processing fees, and moratorium guidelines depend entirely upon your bank or NBFC.
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderGstCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <form onsubmit="event.preventDefault(); calculateGst();" class="space-y-4">
+            <div>
+              <label for="gst-amount" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Amount (₹)</label>
+              <input type="number" step="any" min="0" id="gst-amount" value="5000" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateGst()">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Official GST Rate Slab</label>
+              <div class="grid grid-cols-4 gap-2">
+                <button type="button" onclick="selectGstRate(5)" class="gst-rate-btn py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white hover:bg-slate-100" data-rate="5">5%</button>
+                <button type="button" onclick="selectGstRate(12)" class="gst-rate-btn py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white hover:bg-slate-100" data-rate="12">12%</button>
+                <button type="button" onclick="selectGstRate(18)" class="gst-rate-btn py-2 text-xs font-bold rounded-xl border-brand-500 bg-brand-700 text-white" data-rate="18">18%</button>
+                <button type="button" onclick="selectGstRate(28)" class="gst-rate-btn py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white hover:bg-slate-100" data-rate="28">28%</button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Calculation Mode</label>
+              <div class="flex gap-4">
+                <label class="inline-flex items-center text-xs font-semibold text-slate-800 cursor-pointer">
+                  <input type="radio" name="gst-mode" value="add" checked onchange="calculateGst()" class="text-brand-600">
+                  <span class="ml-2">Add GST (Exclusive)</span>
+                </label>
+                <label class="inline-flex items-center text-xs font-semibold text-slate-800 cursor-pointer">
+                  <input type="radio" name="gst-mode" value="remove" onchange="calculateGst()" class="text-brand-600">
+                  <span class="ml-2">Remove GST (Inclusive)</span>
+                </label>
+              </div>
+            </div>
+          </form>
+
+          <div class="mt-6 p-4 rounded-xl bg-teal-50/70 border border-teal-200">
+            <span class="text-xs font-semibold text-teal-900 uppercase tracking-wider">Tax Breakdown (INR)</span>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 my-3 text-xs">
+              <div class="bg-white p-3 rounded-lg border border-teal-100">
+                <span class="text-slate-500 block">Original / Base Amount</span>
+                <span class="text-base font-bold text-slate-900" id="gst-base-val">₹5,000.00</span>
+              </div>
+              <div class="bg-white p-3 rounded-lg border border-teal-100">
+                <span class="text-slate-500 block">GST Amount (<span id="gst-rate-label">18%</span>)</span>
+                <span class="text-base font-bold text-teal-700" id="gst-tax-val">₹900.00</span>
+                <span class="text-[10px] text-slate-400 block mt-0.5" id="gst-split-val">CGST: ₹450 | SGST: ₹450</span>
+              </div>
+              <div class="bg-white p-3 rounded-lg border border-teal-100">
+                <span class="text-slate-500 block">Total Final Price</span>
+                <span class="text-base font-bold text-slate-900" id="gst-final-val">₹5,900.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderDiscountCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <form onsubmit="event.preventDefault(); calculateDiscount();" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="disc-price" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Original Price (₹)</label>
+                <input type="number" step="any" min="0" id="disc-price" value="1200" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateDiscount()">
+              </div>
+              <div>
+                <label for="disc-pct" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Primary Discount (%)</label>
+                <input type="number" step="any" min="0" max="100" id="disc-pct" value="25" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required oninput="calculateDiscount()">
+              </div>
+            </div>
+
+            <!-- Optional Successive Coupon Discount -->
+            <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <label for="disc-extra" class="block text-xs font-semibold text-slate-700 mb-1">
+                Optional: Second Successive Discount / Coupon Code (%)
+              </label>
+              <input type="number" step="any" min="0" max="100" id="disc-extra" value="5" placeholder="e.g. Extra 5% student coupon" class="w-full sm:w-1/2 px-3 py-1.5 text-xs bg-white border border-slate-300 rounded-lg" oninput="calculateDiscount()">
+              <p class="text-[11px] text-slate-500 mt-1">Applied consecutively on the reduced price (not added linearly).</p>
+            </div>
+          </form>
+
+          <div class="mt-6 p-4 rounded-xl bg-rose-50/70 border border-rose-200">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-rose-200">
+              <div>
+                <span class="text-xs font-semibold text-rose-900 uppercase tracking-wider">Final Price To Pay</span>
+                <div class="text-3xl font-black text-rose-950" id="disc-final-val">₹855.00</div>
+              </div>
+              <div class="px-3 py-1.5 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-bold text-center">
+                You Save: <span id="disc-saved-val">₹345.00</span> (<span id="disc-eff-pct">28.75%</span>)
+              </div>
+            </div>
+            <div class="text-xs text-slate-600 mt-2" id="disc-breakdown-text">
+              First discount (25%) took off ₹300.00 → Second coupon (5%) took off an extra ₹45.00.
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBmiCalculator() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <!-- Unit Selector -->
+          <div class="flex gap-4 mb-4 pb-3 border-b border-slate-200">
+            <label class="inline-flex items-center text-xs font-bold text-slate-800 cursor-pointer">
+              <input type="radio" name="bmi-unit" value="metric" checked onchange="toggleBmiUnits()" class="text-brand-600">
+              <span class="ml-1.5">Metric (cm / kg)</span>
+            </label>
+            <label class="inline-flex items-center text-xs font-bold text-slate-800 cursor-pointer">
+              <input type="radio" name="bmi-unit" value="imperial" onchange="toggleBmiUnits()" class="text-brand-600">
+              <span class="ml-1.5">Imperial (feet-inches / lb)</span>
+            </label>
+          </div>
+
+          <form onsubmit="event.preventDefault(); calculateBmi();" class="space-y-4">
+            <!-- Metric inputs -->
+            <div id="bmi-metric-inputs" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="bmi-cm" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Height (cm)</label>
+                <input type="number" min="50" max="260" id="bmi-cm" value="172" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" oninput="calculateBmi()">
+              </div>
+              <div>
+                <label for="bmi-kg" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Weight (kg)</label>
+                <input type="number" step="0.1" min="20" max="300" id="bmi-kg" value="65" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" oninput="calculateBmi()">
+              </div>
+            </div>
+
+            <!-- Imperial inputs -->
+            <div id="bmi-imperial-inputs" class="hidden grid grid-cols-3 gap-3">
+              <div>
+                <label for="bmi-ft" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Height (ft)</label>
+                <input type="number" min="2" max="8" id="bmi-ft" value="5" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl" oninput="calculateBmi()">
+              </div>
+              <div>
+                <label for="bmi-in" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Inches</label>
+                <input type="number" min="0" max="11" id="bmi-in" value="8" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl" oninput="calculateBmi()">
+              </div>
+              <div>
+                <label for="bmi-lb" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Weight (lb)</label>
+                <input type="number" min="40" max="700" id="bmi-lb" value="143" class="w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl" oninput="calculateBmi()">
+              </div>
+            </div>
+          </form>
+
+          <div class="mt-6 p-4 rounded-xl bg-cyan-50/70 border border-cyan-200">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-cyan-200">
+              <div>
+                <span class="text-xs font-semibold text-cyan-900 uppercase tracking-wider">Your Body Mass Index</span>
+                <div class="text-3xl font-black text-cyan-950 mt-0.5" id="bmi-val">21.97</div>
+              </div>
+              <div id="bmi-category-badge" class="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300 text-center">
+                Normal Weight (18.5 – 24.9)
+              </div>
+            </div>
+            
+            <p class="text-[11px] text-slate-500 mt-3 leading-normal">
+              Disclaimer: This calculator is for general educational and informational purposes and does not constitute medical advice or diagnosis. Always consult certified healthcare professionals.
+            </p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderUnitConverter() {
+      return `
+        <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+          <!-- Unit Category Selector -->
+          <div class="mb-4">
+            <label for="unit-category" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Select Measurement Category</label>
+            <select id="unit-category" class="w-full sm:w-1/2 px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" onchange="loadUnitOptions(); calculateUnits();">
+              <option value="length">Length & Distance</option>
+              <option value="weight">Weight & Mass</option>
+              <option value="temp">Temperature</option>
+              <option value="area">Area & Land</option>
+              <option value="time">Time</option>
+              <option value="speed">Speed</option>
+              <option value="volume">Volume & Liquids</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+            <!-- Left Side -->
+            <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+              <label for="unit-from-val" class="block text-xs font-semibold text-slate-500 mb-1">From Value</label>
+              <input type="number" step="any" id="unit-from-val" value="10" class="w-full px-3 py-2 text-lg font-bold bg-white border border-slate-300 rounded-lg mb-2" oninput="calculateUnits()">
+              <select id="unit-from-unit" class="w-full px-2.5 py-1.5 text-xs bg-white border border-slate-300 rounded-lg" onchange="calculateUnits()"></select>
+            </div>
+
+            <!-- Right Side -->
+            <div class="p-4 bg-brand-50/60 rounded-xl border border-brand-200">
+              <label for="unit-to-val" class="block text-xs font-semibold text-brand-800 mb-1">Converted Value</label>
+              <input type="text" id="unit-to-val" readonly class="w-full px-3 py-2 text-lg font-bold bg-white border border-brand-300 rounded-lg mb-2 text-brand-950">
+              <select id="unit-to-unit" class="w-full px-2.5 py-1.5 text-xs bg-white border border-brand-300 rounded-lg" onchange="calculateUnits()"></select>
+            </div>
+          </div>
+
+          <div class="mt-4 p-3 bg-white border border-slate-200 rounded-xl text-xs text-slate-600 font-mono" id="unit-formula-display">
+            10 Meters = 32.8084 Feet
+          </div>
+        </div>
+      `;
+    }
+
+    function renderIndividualToolPage(slug) {
+      const tool = TOOLS.find(t => t.slug === slug);
+      if (!tool) {
+        return renderNotFoundPage();
+      }
+
+      // Dedicated content and FAQ mapping
+      const toolContent = getToolSpecificDetails(tool.id);
+
+      updateSeoMetadata(
+        `${tool.seoTitle} | Student Utility Hub`,
+        tool.seoDesc,
+        `/tools/${tool.slug}`,
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": tool.name,
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": tool.seoDesc
+        }
+      );
+
+      let calculatorHtml = '';
+      if (tool.id === 'percentage-calculator') calculatorHtml = renderPercentageCalculator();
+      else if (tool.id === 'cgpa-calculator') calculatorHtml = renderCgpaCalculator();
+      else if (tool.id === 'sgpa-calculator') calculatorHtml = renderSgpaCalculator();
+      else if (tool.id === 'attendance-calculator') calculatorHtml = renderAttendanceCalculator();
+      else if (tool.id === 'age-calculator') calculatorHtml = renderAgeCalculator();
+      else if (tool.id === 'emi-calculator') calculatorHtml = renderEmiCalculator();
+      else if (tool.id === 'gst-calculator') calculatorHtml = renderGstCalculator();
+      else if (tool.id === 'discount-calculator') calculatorHtml = renderDiscountCalculator();
+      else if (tool.id === 'bmi-calculator') calculatorHtml = renderBmiCalculator();
+      else if (tool.id === 'unit-converter') calculatorHtml = renderUnitConverter();
+
+      return `
+        <div>
+          ${renderBreadcrumbs([
+            { label: 'Home', url: '#/' },
+            { label: tool.category, url: '#/tools' },
+            { label: tool.name, url: `#/tools/${tool.slug}` }
+          ])}
+
+          <!-- Header -->
+          <div class="mb-6">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="p-2 bg-brand-50 rounded-xl border border-brand-100">
+                ${tool.icon}
+              </div>
+              <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">${tool.name}</h1>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">${tool.description}</p>
+          </div>
+
+          <!-- Top Ad Placement -->
+          ${renderAdSlot('leaderboard')}
+
+          <!-- Main Layout Grid: Calculator + Sidebar -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-8 space-y-6">
+              
+              <!-- Calculator Card -->
+              <div>
+                ${calculatorHtml}
+              </div>
+
+              <!-- Mid Content Ad -->
+              ${renderAdSlot('banner')}
+
+              <!-- How To Use & Formula Section -->
+              <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs space-y-5">
+                <div>
+                  <h2 class="text-base sm:text-lg font-bold text-slate-900 mb-2">How to Use the ${tool.name}</h2>
+                  <ol class="list-decimal list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
+                    ${toolContent.steps.map(s => `<li>${s}</li>`).join('')}
+                  </ol>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100">
+                  <h2 class="text-base sm:text-lg font-bold text-slate-900 mb-2">Calculation Formula</h2>
+                  <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl font-mono text-xs sm:text-sm text-brand-900">
+                    ${toolContent.formula}
+                  </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100">
+                  <h2 class="text-base sm:text-lg font-bold text-slate-900 mb-2">Worked Example</h2>
+                  <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${toolContent.example}</p>
+                </div>
+              </div>
+
+              <!-- FAQs -->
+              <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
+                <h2 class="text-base sm:text-lg font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
+                ${renderFaqAccordion(toolContent.faqs)}
+              </div>
+
+              <!-- Related Tools -->
+              ${renderRelatedTools(tool.related)}
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-4 space-y-6">
+              ${renderAdSlot('sidebar')}
+
+              <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
+                <h3 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Quick Navigation</h3>
+                <ul class="space-y-2 text-xs">
+                  ${TOOLS.map(t => `
+                    <li>
+                      <a href="#/tools/${t.slug}" class="flex items-center justify-between p-2 rounded-lg hover:bg-slate-50 transition ${t.slug === tool.slug ? 'font-bold text-brand-700 bg-brand-50' : 'text-slate-600'}">
+                        <span>${t.name}</span>
+                        <span class="text-[10px] text-slate-400">›</span>
+                      </a>
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function getToolSpecificDetails(toolId) {
+      const library = {
+        'percentage-calculator': {
+          steps: [
+            "Enter your marks obtained in the exam.",
+            "Enter the total maximum marks possible.",
+            "Click Calculate Percentage to obtain exact percentage and fraction breakdown."
+          ],
+          formula: "Percentage (%) = (Marks Obtained ÷ Total Marks) × 100",
+          example: "If a student scores 465 marks out of a maximum of 500 in Class 12 CBSE exams: (465 ÷ 500) × 100 = 93.00%.",
+          faqs: [
+            { q: "How do I calculate exam percentage from 5 subjects?", a: "Sum up your marks obtained in all 5 subjects, sum the maximum marks (usually 500), and divide obtained by total then multiply by 100." },
+            { q: "Can marks obtained exceed total marks?", a: "No. Maximum marks represent 100% capacity. Our tool prevents invalid inputs." }
+          ]
+        },
+        'cgpa-calculator': {
+          steps: [
+            "Enter your SGPA or GPA for each semester.",
+            "Add semesters as needed using the '+ Add Semester' button.",
+            "Check overall cumulative CGPA and toggle between CBSE 9.5x and 10x percentage conversion rules."
+          ],
+          formula: "CGPA = (Sum of all Semester GPAs) ÷ (Number of Semesters)",
+          example: "If your 4 semesters are 8.0, 8.4, 7.8, and 8.6: Total = 32.8. Divided by 4 gives CGPA = 8.20. Under CBSE rule: 8.20 × 9.5 = 77.9%.",
+          faqs: [
+            { q: "Why do universities use 9.5 multiplier?", a: "CBSE and UGC analyzed mark distributions where the top 91-100 bracket average sits near 95 marks, establishing 9.5 as the statistical equivalent factor." }
+          ]
+        },
+        'sgpa-calculator': {
+          steps: [
+            "Input subject titles, grade points obtained (e.g. 10 for O/A+, 9 for A, 8 for B+), and course credits.",
+            "Add subjects for your current semester.",
+            "The tool multiplies each grade point by its credit weighting and divides by total credits."
+          ],
+          formula: "SGPA = Σ (Course Credit × Grade Point) ÷ Σ (Course Credits)",
+          example: "Math (4 credits × 9 GP = 36) + Lab (2 credits × 10 GP = 20). Total points = 56. Total credits = 6. SGPA = 56 ÷ 6 = 9.33.",
+          faqs: [
+            { q: "What is the difference between SGPA and CGPA?", a: "SGPA measures performance in a single semester; CGPA is the cumulative average of all completed semesters." }
+          ]
+        },
+        'attendance-calculator': {
+          steps: [
+            "Input the number of classes you have attended so far.",
+            "Enter total classes conducted by your college so far.",
+            "Choose your target threshold (75% or 80%).",
+            "Review your status, required classes, and impact of missing your next class."
+          ],
+          formula: "Current Attendance % = (Attended Classes ÷ Total Classes) × 100",
+          example: "Attended 48 out of 65 classes = 73.85%. To reach 75%, you need 3 consecutive attendances without absence: (48 + 3) / (65 + 3) = 51 / 68 = 75.00%.",
+          faqs: [
+            { q: "Is 75% attendance mandatory in Indian universities?", a: "Yes, under UGC and AICTE regulations, 75% attendance is generally required to sit for semester examinations unless medical condonation applies." }
+          ]
+        },
+        'age-calculator': {
+          steps: [
+            "Pick your exact date of birth from the calendar.",
+            "The 'Age As Of' date defaults to today, but can be changed to an exam cutoff date (e.g. UPSC / SSC eligibility dates).",
+            "View exact completed years, months, and days plus days until your next birthday."
+          ],
+          formula: "Exact Calendar Gregorian difference accounting for leap years and month lengths.",
+          example: "Born on 15 August 2004 as of 15 January 2025 results in exactly 20 Years, 5 Months, and 0 Days.",
+          faqs: [
+            { q: "Can I check eligibility for government exam cutoff dates?", a: "Yes, change the 'Age As Of' field to the cutoff date specified in the exam notification." }
+          ]
+        },
+        'emi-calculator': {
+          steps: [
+            "Enter the principal loan amount in Indian Rupees.",
+            "Enter the annual interest rate (e.g., 8.5% - 11.5% for education loans).",
+            "Enter loan tenure in either years or months."
+          ],
+          formula: "EMI = [P × r × (1 + r)^n] / [(1 + r)^n - 1] (where r is monthly rate)",
+          example: "₹3,00,000 at 9.5% per annum for 3 years yields a monthly EMI of ₹9,610 with total interest of ₹45,960.",
+          faqs: [
+            { q: "Does this include student loan moratorium periods?", a: "This calculates standard amortized EMI. Moratorium terms vary by lender." }
+          ]
+        },
+        'gst-calculator': {
+          steps: [
+            "Input base or total gross invoice amount.",
+            "Select GST slab: 5%, 12%, 18%, or 28%.",
+            "Choose 'Add GST' to calculate tax on top, or 'Remove GST' to extract base price from MRP."
+          ],
+          formula: "Add GST: GST = (Amount × Rate) ÷ 100. Remove GST: Base = Amount ÷ (1 + Rate/100).",
+          example: "₹5,000 with 18% GST added gives ₹900 tax (₹450 CGST + ₹450 SGST) for a total of ₹5,900.",
+          faqs: [
+            { q: "How is GST split between Center and State?", a: "Intra-state sales split GST 50:50 into CGST and SGST." }
+          ]
+        },
+        'discount-calculator': {
+          steps: [
+            "Enter original price tag / MRP.",
+            "Enter the primary discount percentage.",
+            "Optionally add a secondary promo or coupon code discount for successive application."
+          ],
+          formula: "Final Price = Original × (1 - D1) × (1 - D2)",
+          example: "₹1,200 item with 25% discount becomes ₹900. An additional 5% coupon lowers it to ₹855 (Total savings ₹345).",
+          faqs: [
+            { q: "Is 20% + 20% discount equal to 40%?", a: "No! Successive discounts apply the second discount to the already reduced balance, equaling 36% effective discount." }
+          ]
+        },
+        'bmi-calculator': {
+          steps: [
+            "Select Metric (cm/kg) or Imperial (ft-in/lb).",
+            "Enter height and weight values.",
+            "Review your BMI score and WHO weight category."
+          ],
+          formula: "BMI = Weight (kg) ÷ [Height (m)]²",
+          example: "Height 172 cm (1.72 m) and weight 65 kg: 65 ÷ (1.72 × 1.72) = 21.97 (Normal Weight).",
+          faqs: [
+            { q: "What is a healthy BMI range for young adults?", a: "Standard WHO healthy range is 18.5 to 24.9 kg/m²." }
+          ]
+        },
+        'unit-converter': {
+          steps: [
+            "Select measurement category (Length, Weight, Temperature, Area, etc.).",
+            "Enter value in the source unit input.",
+            "Choose your target unit to instantly view the conversion and formula."
+          ],
+          formula: "Standard scientific SI unit multipliers and temperature linear offsets.",
+          example: "10 Meters = 32.8084 Feet. 100 Celsius = 212 Fahrenheit.",
+          faqs: [
+            { q: "Are conversions accurate for engineering and physics coursework?", a: "Yes, high-precision IEEE 754 floating-point conversion factors are used." }
+          ]
+        }
+      };
+
+      return library[toolId] || {
+        steps: ["Enter parameters", "Check result"],
+        formula: "Result = f(Inputs)",
+        example: "Standard calculation",
+        faqs: []
+      };
+    }
+
+    function renderAboutPage() {
+      updateSeoMetadata('About Us – Student Utility Hub', 'Learn about our mission to provide fast, privacy-friendly, free online tools for students .', '/about');
+      return `
+        <div class="max-w-3xl mx-auto space-y-6">
+          ${renderBreadcrumbs([{ label: 'Home', url: '#/' }, { label: 'About Us', url: '#/about' }])}
+          <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">About Student Utility Hub</h1>
+          
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 text-sm text-slate-600 leading-relaxed">
+            <p>
+              <strong>Student Utility Hub</strong> is a free, privacy-first collection of online utility calculators built primarily for school, college, and university students across India.
+            </p>
+            <p>
+              Our mission is simple: eliminate confusing, ad-cluttered, slow-loading tool pages and replace them with fast, modern, and reliable calculators that run directly inside your browser.
+            </p>
+            <h2 class="text-base font-bold text-slate-900 pt-2">Our Core Principles</h2>
+            <ul class="list-disc list-inside space-y-1 pl-2">
+              <li><strong>Zero Data Storage:</strong> None of your marks, dates of birth, or loan inputs are ever recorded or sent to a database.</li>
+              <li><strong>Mobile Speed:</strong> Lightweight code optimized for low-bandwidth connections on mobile devices.</li>
+              <li><strong>Tailored for India:</strong> Support for CBSE/UGC grading rules, 75% college attendance rules, and Indian Rupee / GST slabs.</li>
+            </ul>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-500">
+              Note: Student Utility Hub is an independent educational web application and is not affiliated with CBSE, UGC, AICTE, NTA, or any state university.
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderContactPage() {
+      updateSeoMetadata('Contact & Suggest a Tool – Student Utility Hub', 'Send feedback or suggest new calculators for your university syllabus.', '/contact');
+      return `
+        <div class="max-w-2xl mx-auto space-y-6">
+          ${renderBreadcrumbs([{ label: 'Home', url: '#/' }, { label: 'Contact', url: '#/contact' }])}
+          <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Contact & Suggest a Tool</h1>
+          <p class="text-xs sm:text-sm text-slate-500">Have an idea for a new calculator or noticed an issue? Let us know!</p>
+          
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-xs">
+            <form onsubmit="event.preventDefault(); handleContactSubmit();" class="space-y-4">
+              <div>
+                <label for="contact-name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Your Name</label>
+                <input type="text" id="contact-name" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required placeholder="e.g. Rahul Sharma">
+              </div>
+              <div>
+                <label for="contact-email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Email Address</label>
+                <input type="email" id="contact-email" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required placeholder="name@college.edu.in">
+              </div>
+              <div>
+                <label for="contact-topic" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Topic</label>
+                <select id="contact-topic" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl">
+                  <option value="suggest">Suggest a New Calculator / Tool</option>
+                  <option value="bug">Report a Bug / Calculation Error</option>
+                  <option value="feedback">General Feedback</option>
+                  <option value="partnership">Advertising / Partnership</option>
+                </select>
+              </div>
+              <div>
+                <label for="contact-message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Message / Tool Formula Details</label>
+                <textarea id="contact-message" rows="4" class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" required placeholder="Describe the tool, university grading scheme, or feedback..."></textarea>
+              </div>
+              <button type="submit" class="w-full py-3 bg-brand-700 hover:bg-brand-800 text-white font-bold rounded-xl text-xs sm:text-sm transition shadow-xs">
+                Send Message / Suggestion
+              </button>
+            </form>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderPrivacyPolicyPage() {
+      updateSeoMetadata('Privacy Policy – Student Utility Hub', 'Read the privacy policy for Student Utility Hub.', '/privacy-policy');
+      return `
+        <div class="max-w-3xl mx-auto space-y-6">
+          ${renderBreadcrumbs([{ label: 'Home', url: '#/' }, { label: 'Privacy Policy', url: '#/privacy-policy' }])}
+          <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Privacy Policy</h1>
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p>Last Updated: 2026. Student Utility Hub values your personal privacy.</p>
+            <h2 class="text-base font-bold text-slate-900 pt-2">1. Client-Side Calculation Data</h2>
+            <p>All calculator tools operate locally within your browser using JavaScript. No personal marks, CGPAs, attendance records, or loan details are transmitted to our servers.</p>
+            <h2 class="text-base font-bold text-slate-900 pt-2">2. Cookies and Advertisements</h2>
+            <p>Third-party vendors, including advertising networks such as Google AdSense, may use cookies to serve ads based on prior visits to this or other websites. Users may opt out of personalized advertising by visiting Google Ads Settings.</p>
+            <h2 class="text-base font-bold text-slate-900 pt-2">3. Analytics</h2>
+            <p>We may use privacy-preserving web analytics to evaluate aggregate traffic and performance. No personally identifiable information (PII) is gathered.</p>
+            <h2 class="text-base font-bold text-slate-900 pt-2">4. Contact Information</h2>
+            <p>If you submit a suggestion via our Contact form, your email is only used to respond to your specific query and is never sold to third parties.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTermsPage() {
+      updateSeoMetadata('Terms & Conditions – Student Utility Hub', 'Terms and conditions of use for Student Utility Hub.', '/terms');
+      return `
+        <div class="max-w-3xl mx-auto space-y-6">
+          ${renderBreadcrumbs([{ label: 'Home', url: '#/' }, { label: 'Terms & Conditions', url: '#/terms' }])}
+          <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Terms & Conditions</h1>
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p>By accessing Student Utility Hub, you agree to these terms.</p>
+            <h2 class="text-base font-bold text-slate-900 pt-2">1. Informational and Educational Use Only</h2>
+            <p>All tools, converters, and formulas are provided free of charge on an 'as-is' basis for educational estimation. Always cross-verify academic marks and cutoffs with your institution's official gazette.</p>
+            <h2 class="text-base font-bold text-slate-900 pt-2">2. Intellectual Property</h2>
+            <p>The code, structure, design, and editorial explanations are the property of Student Utility Hub.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderDisclaimerPage() {
+      updateSeoMetadata('Disclaimer – Student Utility Hub', 'Legal, financial, academic, and medical disclaimers.', '/disclaimer');
+      return `
+        <div class="max-w-3xl mx-auto space-y-6">
+          ${renderBreadcrumbs([{ label: 'Home', url: '#/' }, { label: 'Disclaimer', url: '#/disclaimer' }])}
+          <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Platform Disclaimer</h1>
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <div class="p-4 bg-amber-50 border border-amber-200 rounded-xl text-amber-900 text-xs">
+              <strong>Notice:</strong> None of the tools on this website provide certified medical, financial, tax, or legal counsel.
+            </div>
+            <h2 class="text-base font-bold text-slate-900">Academic & University Estimates</h2>
+            <p>Grading schemes, CGPA-to-percentage multipliers, and attendance thresholds differ by university regulations (e.g. VTU, Anna University, Mumbai University, AKTU, CBSE). Our calculations provide standard estimates.</p>
+            <h2 class="text-base font-bold text-slate-900">Financial & Tax Disclaimers</h2>
+            <p>EMI and GST calculations represent general mathematical estimates. Actual bank interest charges, processing fees, and tax assessments should be verified with licensed chartered accountants or lenders.</p>
+            <h2 class="text-base font-bold text-slate-900">Health Disclaimers (BMI)</h2>
+            <p>Body Mass Index calculations are general statistical metrics and do not measure body composition or cardiovascular health. Consult certified healthcare providers for health advice.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSitemapPage() {
+      updateSeoMetadata('Sitemap – Student Utility Hub', 'Overview of all pages and tool URLs.', '/sitemap');
+      return `
+        <div class="max-w-3xl mx-auto space-y-6">
+          ${renderBreadcrumbs([{ label: 'Home', url: '#/' }, { label: 'Sitemap', url: '#/sitemap' }])}
+          <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">HTML & XML Sitemap</h1>
+          
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-6">
+            <div>
+              <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">Primary Navigation</h2>
+              <ul class="space-y-1 text-xs text-brand-700">
+                <li><a href="#/" class="hover:underline">https://studentutilityhub.com/ (Home)</a></li>
+                <li><a href="#/tools" class="hover:underline">https://studentutilityhub.com/tools (All Tools Directory)</a></li>
+                <li><a href="#/about" class="hover:underline">https://studentutilityhub.com/about (About Us)</a></li>
+                <li><a href="#/contact" class="hover:underline">https://studentutilityhub.com/contact (Contact & Suggest Tool)</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">All 10 Dedicated Tool Pages</h2>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-brand-700">
+                ${TOOLS.map(t => `
+                  <li>
+                    <a href="#/tools/${t.slug}" class="hover:underline flex items-center gap-1">
+                      <span>•</span>
+                      <span>/tools/${t.slug}</span>
+                    </a>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+
+            <div>
+              <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">Legal & Compliance</h2>
+              <ul class="space-y-1 text-xs text-brand-700">
+                <li><a href="#/privacy-policy" class="hover:underline">/privacy-policy</a></li>
+                <li><a href="#/terms" class="hover:underline">/terms</a></li>
+                <li><a href="#/disclaimer" class="hover:underline">/disclaimer</a></li>
+              </ul>
+            </div>
+
+            <!-- Virtual XML Preview Container -->
+            <div class="pt-4 border-t border-slate-200">
+              <h3 class="text-xs font-bold text-slate-700 uppercase mb-2">Virtual XML Sitemap (sitemap.xml)</h3>
+              <pre class="bg-slate-900 text-slate-200 p-3 rounded-xl text-[10px] font-mono overflow-x-auto max-h-48 leading-relaxed">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;&lt;loc&gt;https://studentutilityhub.com/&lt;/loc&gt;&lt;priority&gt;1.0&lt;/priority&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://studentutilityhub.com/tools&lt;/loc&gt;&lt;priority&gt;0.9&lt;/priority&gt;&lt;/url&gt;
+  ${TOOLS.map(t => `&lt;url&gt;&lt;loc&gt;https://studentutilityhub.com/tools/${t.slug}&lt;/loc&gt;&lt;priority&gt;0.8&lt;/priority&gt;&lt;/url&gt;`).join('\n  ')}
+&lt;/urlset&gt;</pre>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderNotFoundPage() {
+      updateSeoMetadata('Page Not Found (404) – Student Utility Hub', 'Requested page was not found.', '/404');
+      return `
+        <div class="text-center py-16 max-w-md mx-auto">
+          <div class="text-6xl font-black text-brand-700 mb-2">404</div>
+          <h1 class="text-xl font-bold text-slate-900 mb-2">Calculator or Page Not Found</h1>
+          <p class="text-xs text-slate-600 mb-6">The tool you are searching for might have moved or is under construction.</p>
+          <a href="#/" class="px-5 py-2.5 bg-brand-700 text-white rounded-xl text-xs font-semibold hover:bg-brand-800 transition">
+            Return to Homepage
+          </a>
+        </div>
+      `;
+    }
+
+    function router() {
+      const hash = window.location.hash || '#/';
+      const app = document.getElementById('app');
+      window.scrollTo(0, 0);
+
+      // Close mobile menu if open
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+      }
+
+      // Update Navigation Links active state
+      document.querySelectorAll('#main-header nav a').forEach(a => {
+        const linkHash = a.getAttribute('href');
+        if (linkHash === hash) {
+          a.classList.add('active-nav-link');
+        } else {
+          a.classList.remove('active-nav-link');
+        }
+      });
+
+      // Route Dispatcher
+      if (hash === '#/' || hash === '#' || hash === '') {
+        app.innerHTML = renderHomePage();
+        initHomePageSearch();
+      } else if (hash === '#/tools') {
+        app.innerHTML = renderToolsDirectoryPage();
+      } else if (hash.startsWith('#/tools/')) {
+        const slug = hash.replace('#/tools/', '').split('?')[0];
+        app.innerHTML = renderIndividualToolPage(slug);
+        initToolPageInteractive(slug);
+      } else if (hash === '#/about') {
+        app.innerHTML = renderAboutPage();
+      } else if (hash === '#/contact') {
+        app.innerHTML = renderContactPage();
+      } else if (hash === '#/privacy-policy') {
+        app.innerHTML = renderPrivacyPolicyPage();
+      } else if (hash === '#/terms') {
+        app.innerHTML = renderTermsPage();
+      } else if (hash === '#/disclaimer') {
+        app.innerHTML = renderDisclaimerPage();
+      } else if (hash === '#/sitemap') {
+        app.innerHTML = renderSitemapPage();
+      } else {
+        app.innerHTML = renderNotFoundPage();
+      }
+    }
+
+    window.addEventListener('hashchange', router);
+    window.addEventListener('DOMContentLoaded', () => {
+      // Mobile Hamburger toggle
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          const isExpanded = !menu.classList.contains('hidden');
+          btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        });
+      }
+
+      // Keyboard shortcut Ctrl+K
+      window.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          focusSearchInput();
+        }
+      });
+
+      router();
+    });
+
+    function initHomePageSearch() {
+      // Clean start state
+    }
+
+    function focusSearchInput() {
+      if (window.location.hash !== '#/' && window.location.hash !== '') {
+        window.location.hash = '#/';
+        setTimeout(() => {
+          const input = document.getElementById('home-search-input');
+          if (input) input.focus();
+        }, 150);
+      } else {
+        const input = document.getElementById('home-search-input');
+        if (input) input.focus();
+      }
+    }
+
+    function quickSearchTag(tag) {
+      const input = document.getElementById('home-search-input');
+      if (input) {
+        input.value = tag;
+        handleLiveSearch(tag);
+      }
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('home-search-input');
+      if (input) {
+        input.value = '';
+        handleLiveSearch('');
+      }
+    }
+
+    function handleLiveSearch(query) {
+      const q = query.trim().toLowerCase();
+      const clearBtn = document.getElementById('search-clear-btn');
+      if (clearBtn) {
+        if (q.length > 0) clearBtn.classList.remove('hidden');
+        else clearBtn.classList.add('hidden');
+      }
+
+      const grid = document.getElementById('tools-grid-container');
+      const noResults = document.getElementById('no-search-results');
+      const counter = document.getElementById('tools-counter-badge');
+      if (!grid) return;
+
+      const filtered = TOOLS.filter(tool => {
+        if (!q) return true;
+        const inName = tool.name.toLowerCase().includes(q);
+        const inDesc = tool.description.toLowerCase().includes(q);
+        const inCat = tool.category.toLowerCase().includes(q);
+        const inKeywords = tool.keywords && tool.keywords.some(k => k.toLowerCase().includes(q));
+        return inName || inDesc || inCat || inKeywords;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        if (noResults) noResults.classList.remove('hidden');
+        if (counter) counter.textContent = '0 Tools Found';
+      } else {
+        if (noResults) noResults.classList.add('hidden');
+        grid.innerHTML = filtered.map(renderToolCard).join('');
+        if (counter) counter.textContent = `${filtered.length} Tool${filtered.length > 1 ? 's' : ''} Found`;
+      }
+    }
+
+    function filterCategory(catId) {
+      document.querySelectorAll('.category-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-700', 'text-white', 'shadow-xs');
+        btn.classList.add('bg-white', 'text-slate-600');
+      });
+      const activeBtn = document.getElementById(`tab-btn-${catId}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-brand-700', 'text-white', 'shadow-xs');
+        activeBtn.classList.remove('bg-white', 'text-slate-600');
+      }
+
+      const grid = document.getElementById('tools-grid-container');
+      const counter = document.getElementById('tools-counter-badge');
+      if (!grid) return;
+
+      const filtered = catId === 'all' 
+        ? TOOLS 
+        : TOOLS.filter(t => t.categorySlug === catId);
+
+      grid.innerHTML = filtered.map(renderToolCard).join('');
+      if (counter) counter.textContent = `${filtered.length} Tools`;
+    }
+
+    /* Initialize Interactive inputs per tool view */
+    function initToolPageInteractive(slug) {
+      if (slug === 'cgpa-calculator') calculateCgpa();
+      if (slug === 'sgpa-calculator') calculateSgpa();
+      if (slug === 'attendance-calculator') calculateAttendance();
+      if (slug === 'age-calculator') {
+        const todayStr = new Date().toISOString().split('T')[0];
+        const asof = document.getElementById('age-asof');
+        const dob = document.getElementById('age-dob');
+        if (asof) asof.value = todayStr;
+        if (dob) dob.value = '2004-08-15';
+        calculateAge();
+      }
+      if (slug === 'emi-calculator') calculateEmi();
+      if (slug === 'gst-calculator') calculateGst();
+      if (slug === 'discount-calculator') calculateDiscount();
+      if (slug === 'bmi-calculator') calculateBmi();
+      if (slug === 'unit-converter') {
+        loadUnitOptions();
+        calculateUnits();
+      }
+    }
+
+    // 1. Percentage
+    function calculatePercentage() {
+      const obt = parseFloat(document.getElementById('pct-obtained').value);
+      const tot = parseFloat(document.getElementById('pct-total').value);
+      const resContainer = document.getElementById('pct-result');
+
+      if (isNaN(obt) || isNaN(tot)) {
+        showToast('Please enter both marks fields.', 'error');
+        return;
+      }
+      if (tot <= 0) {
+        showToast('Total maximum marks must be greater than zero.', 'error');
+        return;
+      }
+
+      const pct = (obt / tot) * 100;
+      document.getElementById('pct-result-val').textContent = `${pct.toFixed(2)}%`;
+      document.getElementById('pct-fraction-val').textContent = `(${obt} / ${tot})`;
+      document.getElementById('pct-formula-step').textContent = `Formula step: (${obt} ÷ ${tot}) × 100 = ${pct.toFixed(4)}%`;
+      resContainer.classList.remove('hidden');
+    }
+
+    function resetPercentageCalc() {
+      const f = document.getElementById('percentage-form');
+      if (f) f.reset();
+      const r = document.getElementById('pct-result');
+      if (r) r.classList.add('hidden');
+    }
+
+    // 2. CGPA
+    function calculateCgpa() {
+      const inputs = document.querySelectorAll('.cgpa-input');
+      let sum = 0;
+      let count = 0;
+      inputs.forEach(input => {
+        const v = parseFloat(input.value);
+        if (!isNaN(v) && v >= 0) {
+          sum += v;
+          count++;
+        }
+      });
+      const cgpa = count > 0 ? (sum / count) : 0;
+      const multRadio = document.querySelector('input[name="cgpa-multiplier"]:checked');
+      const multiplier = multRadio ? parseFloat(multRadio.value) : 9.5;
+      const pct = cgpa * multiplier;
+
+      const out = document.getElementById('cgpa-output');
+      const pctOut = document.getElementById('cgpa-pct-output');
+      if (out) out.textContent = cgpa.toFixed(2);
+      if (pctOut) pctOut.textContent = `${pct.toFixed(2)}%`;
+    }
+
+    function addCgpaSemester() {
+      const container = document.getElementById('cgpa-rows');
+      if (!container) return;
+      const currentCount = container.querySelectorAll('.cgpa-row').length + 1;
+      const div = document.createElement('div');
+      div.className = 'grid grid-cols-12 gap-2 items-center cgpa-row';
+      div.innerHTML = `
+        <div class="col-span-5 sm:col-span-4">
+          <span class="text-xs font-semibold text-slate-700">Semester ${currentCount}</span>
+        </div>
+        <div class="col-span-7 sm:col-span-8">
+          <input type="number" step="0.01" min="0" max="10" placeholder="GPA" class="cgpa-input w-full px-3 py-2 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:ring-2 focus:ring-brand-500" value="8.00" oninput="calculateCgpa()">
+        </div>
+      `;
+      container.appendChild(div);
+      calculateCgpa();
+    }
+
+    function removeCgpaSemester() {
+      const container = document.getElementById('cgpa-rows');
+      if (!container) return;
+      const rows = container.querySelectorAll('.cgpa-row');
+      if (rows.length > 1) {
+        rows[rows.length - 1].remove();
+        calculateCgpa();
+      } else {
+        showToast('At least one semester is required.', 'error');
+      }
+    }
+
+    // 3. SGPA
+    function calculateSgpa() {
+      const rows = document.querySelectorAll('.sgpa-row');
+      let totalPoints = 0;
+      let totalCredits = 0;
+
+      rows.forEach(r => {
+        const gp = parseFloat(r.querySelector('.sgpa-gp').value);
+        const cr = parseFloat(r.querySelector('.sgpa-cr').value);
+        if (!isNaN(gp) && !isNaN(cr) && cr > 0) {
+          totalPoints += (gp * cr);
+          totalCredits += cr;
+        }
+      });
+
+      const sgpa = totalCredits > 0 ? (totalPoints / totalCredits) : 0;
+      const out = document.getElementById('sgpa-output');
+      const breakdown = document.getElementById('sgpa-breakdown');
+      if (out) out.textContent = sgpa.toFixed(2);
+      if (breakdown) {
+        breakdown.textContent = `Total Points Earned: ${totalPoints.toFixed(2)} | Total Course Credits: ${totalCredits.toFixed(1)} | Formula: ${totalPoints.toFixed(2)} ÷ ${totalCredits.toFixed(1)}`;
+      }
+    }
+
+    function addSgpaRow() {
+      const tbody = document.getElementById('sgpa-rows');
+      if (!tbody) return;
+      const tr = document.createElement('tr');
+      tr.className = 'sgpa-row';
+      tr.innerHTML = `
+        <td class="py-2 pr-2"><input type="text" value="New Course" class="w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" placeholder="Course name"></td>
+        <td class="py-2 px-1"><input type="number" step="0.5" min="0" max="10" value="8" class="sgpa-gp w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+        <td class="py-2 px-1"><input type="number" step="0.5" min="1" max="10" value="3" class="sgpa-cr w-full px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs" oninput="calculateSgpa()"></td>
+        <td class="py-2 pl-1 text-center"><button type="button" onclick="deleteSgpaRow(this)" class="text-red-500 hover:text-red-700">✕</button></td>
+      `;
+      tbody.appendChild(tr);
+      calculateSgpa();
+    }
+
+    function deleteSgpaRow(btn) {
+      const rows = document.querySelectorAll('.sgpa-row');
+      if (rows.length <= 1) {
+        showToast('At least one subject must remain.', 'error');
+        return;
+      }
+      btn.closest('.sgpa-row').remove();
+      calculateSgpa();
+    }
+
+    // 4. Attendance
+    function calculateAttendance() {
+      const attended = parseInt(document.getElementById('att-attended').value, 10);
+      const total = parseInt(document.getElementById('att-total').value, 10);
+      const targetPct = parseFloat(document.getElementById('att-target').value);
+
+      if (isNaN(attended) || isNaN(total) || total <= 0 || attended > total) {
+        return;
+      }
+
+      const current = (attended / total) * 100;
+      const curEl = document.getElementById('att-current-pct');
+      const badge = document.getElementById('att-status-badge');
+      const actionText = document.getElementById('att-action-text');
+      const nextAtt = document.getElementById('att-next-attend');
+      const nextMiss = document.getElementById('att-next-miss');
+
+      if (curEl) curEl.textContent = `${current.toFixed(2)}%`;
+
+      // Next class impacts
+      if (nextAtt) nextAtt.textContent = `${(((attended + 1) / (total + 1)) * 100).toFixed(2)}%`;
+      if (nextMiss) nextMiss.textContent = `${(((attended) / (total + 1)) * 100).toFixed(2)}%`;
+
+      const targetFrac = targetPct / 100;
+
+      if (current >= targetPct) {
+        if (badge) {
+          badge.className = 'px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-100 text-emerald-900 border border-emerald-300 text-center';
+          badge.textContent = `Safe! Meeting ${targetPct}% Requirement`;
+        }
+        // Calculate safe bunks
+        const maxBunk = Math.floor((attended - (targetFrac * total)) / targetFrac);
+        if (actionText) {
+          if (maxBunk > 0) {
+            actionText.innerHTML = `You are safely above target! You can miss next <strong>${maxBunk}</strong> class${maxBunk > 1 ? 'es' : ''} and still maintain ${targetPct}%.`;
+          } else {
+            actionText.innerHTML = `You are on the borderline. Do not miss any upcoming lectures to avoid dropping below ${targetPct}%.`;
+          }
+        }
+      } else {
+        if (badge) {
+          badge.className = 'px-3.5 py-1.5 rounded-xl text-xs font-bold bg-rose-100 text-rose-900 border border-rose-300 text-center';
+          badge.textContent = `Short of ${targetPct}% Requirement`;
+        }
+        // Classes needed in a row: (attended + x) / (total + x) >= targetFrac
+        // x >= (targetFrac * total - attended) / (1 - targetFrac)
+        const needed = Math.ceil((targetFrac * total - attended) / (1 - targetFrac));
+        if (actionText) {
+          actionText.innerHTML = `You must attend next <strong>${needed}</strong> class${needed > 1 ? 'es' : ''} continuously (without absence) to achieve ${targetPct}%.`;
+        }
+      }
+    }
+
+    // 5. Age Calculator
+    function calculateAge() {
+      const dobVal = document.getElementById('age-dob').value;
+      const asofVal = document.getElementById('age-asof').value;
+      if (!dobVal || !asofVal) return;
+
+      const dob = new Date(dobVal);
+      const asof = new Date(asofVal);
+
+      if (dob > asof) {
+        showToast('Date of birth cannot be later than As-of date.', 'error');
+        return;
+      }
+
+      let y = asof.getFullYear() - dob.getFullYear();
+      let m = asof.getMonth() - dob.getMonth();
+      let d = asof.getDate() - dob.getDate();
+
+      if (d < 0) {
+        m--;
+        // Days in previous month of asof
+        const prevMonth = new Date(asof.getFullYear(), asof.getMonth(), 0);
+        d += prevMonth.getDate();
+      }
+      if (m < 0) {
+        y--;
+        m += 12;
+      }
+
+      document.getElementById('age-years').textContent = y;
+      document.getElementById('age-months').textContent = m;
+      document.getElementById('age-days').textContent = d;
+
+      // Next birthday countdown
+      const today = new Date();
+      let nextBday = new Date(today.getFullYear(), dob.getMonth(), dob.getDate());
+      if (nextBday < today) {
+        nextBday.setFullYear(today.getFullYear() + 1);
+      }
+      const diffTime = nextBday - today;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+      const nextDateEl = document.getElementById('age-next-date');
+      const nextDaysEl = document.getElementById('age-next-days');
+      if (nextDateEl) nextDateEl.textContent = nextBday.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+      if (nextDaysEl) nextDaysEl.textContent = `${diffDays} days away`;
+    }
+
+    // 6. EMI Calculator
+    function calculateEmi() {
+      const p = parseFloat(document.getElementById('emi-amount').value);
+      const rate = parseFloat(document.getElementById('emi-rate').value);
+      let tenure = parseFloat(document.getElementById('emi-tenure').value);
+      const tenureType = document.getElementById('emi-tenure-type').value;
+
+      if (isNaN(p) || isNaN(rate) || isNaN(tenure) || p <= 0 || tenure <= 0) return;
+
+      const n = tenureType === 'years' ? (tenure * 12) : tenure;
+      const r = (rate / 12) / 100;
+
+      const emi = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+      const totalPayable = emi * n;
+      const totalInterest = totalPayable - p;
+
+      const fmt = (num) => '₹' + Math.round(num).toLocaleString('en-IN');
+
+      document.getElementById('emi-monthly-val').textContent = fmt(emi);
+      document.getElementById('emi-principal-val').textContent = fmt(p);
+      document.getElementById('emi-interest-val').textContent = fmt(totalInterest);
+      document.getElementById('emi-total-val').textContent = fmt(totalPayable);
+
+      const pPct = ((p / totalPayable) * 100).toFixed(1);
+      const iPct = (100 - pPct).toFixed(1);
+
+      document.getElementById('emi-ratio-text').textContent = `${pPct}% Principal / ${iPct}% Interest`;
+      document.getElementById('emi-bar-principal').style.width = `${pPct}%`;
+      document.getElementById('emi-bar-interest').style.width = `${iPct}%`;
+    }
+
+    // 7. GST Calculator
+    let currentGstRate = 18;
+    function selectGstRate(rate) {
+      currentGstRate = rate;
+      document.querySelectorAll('.gst-rate-btn').forEach(btn => {
+        if (parseInt(btn.getAttribute('data-rate'), 10) === rate) {
+          btn.className = 'gst-rate-btn py-2 text-xs font-bold rounded-xl border-brand-500 bg-brand-700 text-white';
+        } else {
+          btn.className = 'gst-rate-btn py-2 text-xs font-bold rounded-xl border border-slate-300 bg-white hover:bg-slate-100';
+        }
+      });
+      calculateGst();
+    }
+
+    function calculateGst() {
+      const amt = parseFloat(document.getElementById('gst-amount').value);
+      const mode = document.querySelector('input[name="gst-mode"]:checked').value;
+      if (isNaN(amt) || amt < 0) return;
+
+      const fmt = (n) => '₹' + n.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      let base = 0, gst = 0, total = 0;
+
+      if (mode === 'add') {
+        base = amt;
+        gst = (base * currentGstRate) / 100;
+        total = base + gst;
+      } else {
+        total = amt;
+        base = total / (1 + (currentGstRate / 100));
+        gst = total - base;
+      }
+
+      document.getElementById('gst-rate-label').textContent = `${currentGstRate}%`;
+      document.getElementById('gst-base-val').textContent = fmt(base);
+      document.getElementById('gst-tax-val').textContent = fmt(gst);
+      document.getElementById('gst-final-val').textContent = fmt(total);
+      document.getElementById('gst-split-val').textContent = `CGST (${currentGstRate/2}%): ${fmt(gst/2)} | SGST (${currentGstRate/2}%): ${fmt(gst/2)}`;
+    }
+
+    // 8. Discount Calculator
+    function calculateDiscount() {
+      const price = parseFloat(document.getElementById('disc-price').value);
+      const d1 = parseFloat(document.getElementById('disc-pct').value);
+      const d2Input = document.getElementById('disc-extra').value;
+      const d2 = d2Input ? parseFloat(d2Input) : 0;
+
+      if (isNaN(price) || isNaN(d1) || price < 0 || d1 < 0) return;
+
+      const afterD1 = price - (price * (d1 / 100));
+      const firstSaving = price - afterD1;
+      const finalPrice = afterD1 - (afterD1 * (d2 / 100));
+      const secondSaving = afterD1 - finalPrice;
+      const totalSaved = price - finalPrice;
+      const effPct = ((totalSaved / price) * 100).toFixed(2);
+
+      const fmt = (n) => '₹' + n.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+      document.getElementById('disc-final-val').textContent = fmt(finalPrice);
+      document.getElementById('disc-saved-val').textContent = fmt(totalSaved);
+      document.getElementById('disc-eff-pct').textContent = `${effPct}%`;
+
+      const breakdown = document.getElementById('disc-breakdown-text');
+      if (d2 > 0) {
+        breakdown.textContent = `First discount (${d1}%) saved ${fmt(firstSaving)} → Successive coupon (${d2}%) saved extra ${fmt(secondSaving)}.`;
+      } else {
+        breakdown.textContent = `Single flat discount of ${d1}% saved ${fmt(totalSaved)} from the original ${fmt(price)}.`;
+      }
+    }
+
+    // 9. BMI Calculator
+    function toggleBmiUnits() {
+      const unit = document.querySelector('input[name="bmi-unit"]:checked').value;
+      const metricBox = document.getElementById('bmi-metric-inputs');
+      const impBox = document.getElementById('bmi-imperial-inputs');
+      if (unit === 'metric') {
+        metricBox.classList.remove('hidden');
+        impBox.classList.add('hidden');
+      } else {
+        metricBox.classList.add('hidden');
+        impBox.classList.remove('hidden');
+      }
+      calculateBmi();
+    }
+
+    function calculateBmi() {
+      const unit = document.querySelector('input[name="bmi-unit"]:checked').value;
+      let heightM = 0;
+      let weightKg = 0;
+
+      if (unit === 'metric') {
+        const cm = parseFloat(document.getElementById('bmi-cm').value);
+        weightKg = parseFloat(document.getElementById('bmi-kg').value);
+        if (isNaN(cm) || isNaN(weightKg) || cm <= 0 || weightKg <= 0) return;
+        heightM = cm / 100;
+      } else {
+        const ft = parseFloat(document.getElementById('bmi-ft').value) || 0;
+        const inc = parseFloat(document.getElementById('bmi-in').value) || 0;
+        const lb = parseFloat(document.getElementById('bmi-lb').value);
+        if (isNaN(lb) || lb <= 0 || (ft === 0 && inc === 0)) return;
+        const totalInches = (ft * 12) + inc;
+        heightM = totalInches * 0.0254;
+        weightKg = lb * 0.45359237;
+      }
+
+      const bmi = weightKg / (heightM * heightM);
+      const bmiVal = document.getElementById('bmi-val');
+      const badge = document.getElementById('bmi-category-badge');
+
+      if (bmiVal) bmiVal.textContent = bmi.toFixed(2);
+
+      let catText = 'Normal Weight (18.5 – 24.9)';
+      let badgeStyle = 'px-3.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300 text-center';
+
+      if (bmi < 18.5) {
+        catText = 'Underweight (< 18.5)';
+        badgeStyle = 'px-3.5 py-1.5 rounded-xl text-xs font-bold bg-amber-100 text-amber-800 border border-amber-300 text-center';
+      } else if (bmi >= 25 && bmi < 29.9) {
+        catText = 'Overweight (25 – 29.9)';
+        badgeStyle = 'px-3.5 py-1.5 rounded-xl text-xs font-bold bg-amber-100 text-amber-800 border border-amber-300 text-center';
+      } else if (bmi >= 30) {
+        catText = 'Obesity (≥ 30)';
+        badgeStyle = 'px-3.5 py-1.5 rounded-xl text-xs font-bold bg-red-100 text-red-800 border border-red-300 text-center';
+      }
+
+      if (badge) {
+        badge.textContent = catText;
+        badge.className = badgeStyle;
+      }
+    }
+
+    // 10. Multi-Unit Converter
+    const UNIT_REGISTRY = {
+      length: {
+        units: ['Meters', 'Kilometers', 'Centimeters', 'Millimeters', 'Miles', 'Yards', 'Feet', 'Inches'],
+        toBase: { Meters: 1, Kilometers: 1000, Centimeters: 0.01, Millimeters: 0.001, Miles: 1609.344, Yards: 0.9144, Feet: 0.3048, Inches: 0.0254 }
+      },
+      weight: {
+        units: ['Kilograms', 'Grams', 'Milligrams', 'Pounds', 'Ounces', 'Quintals', 'Metric Tons'],
+        toBase: { Kilograms: 1, Grams: 0.001, Milligrams: 0.000001, Pounds: 0.453592, Ounces: 0.0283495, Quintals: 100, 'Metric Tons': 1000 }
+      },
+      temp: {
+        units: ['Celsius', 'Fahrenheit', 'Kelvin'],
+        special: true
+      },
+      area: {
+        units: ['Square Meters', 'Square Kilometers', 'Square Feet', 'Acres', 'Hectares', 'Gunta (India)'],
+        toBase: { 'Square Meters': 1, 'Square Kilometers': 1000000, 'Square Feet': 0.092903, Acres: 4046.86, Hectares: 10000, 'Gunta (India)': 101.17 }
+      },
+      time: {
+        units: ['Seconds', 'Minutes', 'Hours', 'Days', 'Weeks'],
+        toBase: { Seconds: 1, Minutes: 60, Hours: 3600, Days: 86400, Weeks: 604800 }
+      },
+      speed: {
+        units: ['km/h', 'm/s', 'mph', 'knots'],
+        toBase: { 'km/h': 0.277778, 'm/s': 1, mph: 0.44704, knots: 0.514444 }
+      },
+      volume: {
+        units: ['Liters', 'Milliliters', 'Cubic Meters', 'Gallons (US)', 'Cups (Metric)'],
+        toBase: { Liters: 1, Milliliters: 0.001, 'Cubic Meters': 1000, 'Gallons (US)': 3.78541, 'Cups (Metric)': 0.25 }
+      }
+    };
+
+    function loadUnitOptions() {
+      const cat = document.getElementById('unit-category').value;
+      const data = UNIT_REGISTRY[cat];
+      const fromSel = document.getElementById('unit-from-unit');
+      const toSel = document.getElementById('unit-to-unit');
+      if (!data || !fromSel || !toSel) return;
+
+      fromSel.innerHTML = data.units.map(u => `<option value="${u}">${u}</option>`).join('');
+      toSel.innerHTML = data.units.map(u => `<option value="${u}">${u}</option>`).join('');
+
+      if (data.units.length > 1) {
+        toSel.selectedIndex = 1;
+      }
+    }
+
+    function calculateUnits() {
+      const cat = document.getElementById('unit-category').value;
+      const val = parseFloat(document.getElementById('unit-from-val').value);
+      const fromUnit = document.getElementById('unit-from-unit').value;
+      const toUnit = document.getElementById('unit-to-unit').value;
+      const outInput = document.getElementById('unit-to-val');
+      const formulaDisplay = document.getElementById('unit-formula-display');
+
+      if (isNaN(val)) {
+        if (outInput) outInput.value = '';
+        return;
+      }
+
+      let res = 0;
+      if (cat === 'temp') {
+        // Temp conversion
+        let c = val;
+        if (fromUnit === 'Fahrenheit') c = (val - 32) * (5/9);
+        else if (fromUnit === 'Kelvin') c = val - 273.15;
+
+        if (toUnit === 'Celsius') res = c;
+        else if (toUnit === 'Fahrenheit') res = (c * (9/5)) + 32;
+        else if (toUnit === 'Kelvin') res = c + 273.15;
+      } else {
+        const factorFrom = UNIT_REGISTRY[cat].toBase[fromUnit];
+        const factorTo = UNIT_REGISTRY[cat].toBase[toUnit];
+        const baseVal = val * factorFrom;
+        res = baseVal / factorTo;
+      }
+
+      const formatted = (Math.abs(res) < 0.0001 || Math.abs(res) > 1000000) 
+        ? res.toExponential(4) 
+        : parseFloat(res.toFixed(5));
+
+      if (outInput) outInput.value = formatted;
+      if (formulaDisplay) {
+        formulaDisplay.textContent = `${val} ${fromUnit} = ${formatted} ${toUnit}`;
+      }
+    }
+
+    // Contact form submit mock
+    function handleContactSubmit() {
+      const name = document.getElementById('contact-name').value;
+      showToast(`Thank you, ${name}! Your suggestion has been recorded.`, 'success');
+      setTimeout(() => {
+        window.location.hash = '#/';
+      }, 1800);
+    }
+  </script>
+</body>
+</html>
