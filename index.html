@@ -1885,7 +1885,10 @@
         </div>
       `;
     }
-
+function navigate(path) {
+  history.pushState({}, '', path);
+  router();
+}  
 function router() {
   const path = window.location.pathname || '/';
   const app = document.getElementById('app');
